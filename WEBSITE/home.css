@@ -1,69 +1,81 @@
-*{
+* { 
+    padding: 0; 
     margin: 0;
-    padding: 0;
-    font-family: Georgia;  
+    box-sizing: border-box; 
 }
-.container{
-    width: 85%;
-    min-height: 90vh;
-    padding-left:3%;
-    padding-top: 1%;
-    padding-right: 20%;
-    overflow: hidden;
-
+html {
+    font-size: 15px; 
 }
-.navbar{
-    width: 100%;
-    display: flex; 
-    padding-left:3%;
-    padding-top:1.5%;
-    align-items: center;
-    background-color: black;
-    color: darkorange;
-}
-buttons{
-    flex: 1;
-    text-align:right;     
-}
-buttons li{
-    list-style:none; 
-    display: inline-block;
-    margin-right:  40px;
-
-}
-buttons li a{
+a {
     text-decoration: none; 
-    color: floralwhite;
-    font-size: 19px;
-    border-radius:6px;
-    cursor: pointer;
-    transition: width 0.5s;
 }
-buttons ul li a:hover{
-    color: #ff5ea2;
+.container {
+    min-height: 50px; 
+    width: 100%; 
+    display: flex; 
+    align-items: cover; 
 }
-.row{
-    display: flex;
-    justify-content: space-between;
+#header {
+    position: fixed;
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100vw;
+    height: auto;  
+}
+#header .header {
+    min-height: 8px; 
+    background-color:aliceblue;
+}
+#header .entire-bar{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 1300px; 
+    padding: 0 10px;
+}
+#header .bigname h1{
+    padding: 30px; 
+    text-transform: uppercase;
+    font-size: 2rem; 
+    color: darkblue; 
+    letter-spacing: .4rem; 
+}
+#header .navlist {
+}
+#header .navlist ul { 
+    font-size: 1.2rem; 
+    font-family: Georgia;
+    letter-spacing: .2rem; 
+    list-style: none; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
     align-items: center;
-    margin: 200px 0;
-} 
-.intro{
-    flex-basis:60%;
-    position: relative;
-    font-size: 20px;
-    padding-left: 4%;
+    
+}
+#header .navlist ul a{
+    color: black; 
+    padding: 10px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+}
+#header .navlist ul li:hover a{
+    color:blue;
+}
 
+/*HomePage Big*/ 
+#home {
+    min-height: 675px; 
+    background-color:yellow;
+    position: relative; 
 }
-.col1 h5{
-    font-size:30 px;
-    margin: 20px 0 10 px;
-}
-.col1:::after{
-    content: '';
-    width:10px;
-    height: 57%;
-    background: linear-gradient(to right, #fb5283,#ff3527);
-    position:absolute;
-    left: -40px; 
+#home .home {
+    max-width: 1200px; 
+    max-height: 700px; 
+    margin: 0 auto; 
+    padding: 0 50px; 
+    justify-content: flex-start; 
 }
