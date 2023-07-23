@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width", initial-scale="1.0">
+        <title>Tina Liu Portfolio</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <!--Header Section -->
+        <section id = "header">    
+            <div class="header container">
+                <div class="entire-bar">
+                    <div class="logo">
+                        <a href="#home">
+                            <img src = "images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG">
+                        </a>
+                    </div>
+                    <div class = "bigname">
+                        <a href = "#home"><h1>Tina Liu</h1></a>
+                    </div>
+                    <div class="navlist">
+                        <div class="circle"><div class = "bar"></div></div>
+                        <ul>
+                            <li><a href = "#home" data-after= "Home">Home</a></li>
+                            <li><a href = "#AboutMe" data-after="AboutMe">About Me</a></li>
+                            <li><a href = "#projects" data-after="OverviewProjects">Projects</a></li>
+                            <li><a href = "#experiences" data-after="Experiences">Experiences</a></li>
+                            <li><a href = "#skills" data-after="Skills">Skills</a></li>
+                            <li><a href = "#contactme" data-after = "ContactMe">Contact Me</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home Section -->
+        <section id = "home">
+            <div class="home container">
+                <div class="background">
+                    <video autoplay loop muted plays-inline class="background-video">
+                        <source src="images/stars_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="introduction">
+                    <h2>Hey,</h2>
+                    <h1>I'm <span>Tina Liu</span>!</h1>
+                    <h3>Student.</h3>
+                    <a href="images/Tianai_Liu_Resume_RemoveGPA.pdf" download="Tianai_Liu_Resume.pdf">
+                        <button>Download My Resume</button>
+                    </a>
+                </div>
+                <div class="profile-photo">
+                    <a href = "#AboutMe">
+                        <img src ="images/profilephoto.png">
+                    </a>
+                </div>
+                <div class="credit">
+                    <a href = "https://www.youtube.com/watch?v=KEOj1puuPYA">
+                        <img src="images/youtube_logo.webp">
+                    </a>
+                </div>
+            </div>
+        </section>
+  
+        <!--About Me Section --> 
+        <section id = "AboutMe">
+            <div class="about-me container">
+        
+    
+            </div>
+
+        </section>
+             <!--
+        Projects
+        <section id = "OverviewProjects">
+            <div class="projects container">
+
+            </div>
+        </section>
+        Other Experiences
+        <section id = "Experiences">
+            <div class="experiences container">
+
+            </div>
+        </section>
+        Skills
+        <section id = "Skills">
+            <div class="skills container">
+
+            </div>
+        </section>
+        Contact Me
+        <section id = "Contact">
+            <div class="contact container">
+
+            </div>
+        </section>
+
+        -->
+
+        <script>
+            document.addEventListener('scroll', () => {
+            const header = document.querySelector('#header'); 
+            if(window.scrollY > 0) {
+                header.classList.add('scrolled'); 
+            } else {
+                header.classList.remove('scrolled');
+            }
+        })
+        </script>
+
+    
+    </body>
+</html>
+</html>
