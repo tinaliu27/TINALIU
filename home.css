@@ -127,6 +127,8 @@ body { overflow-x: hidden; }
     align-items: center; 
     justify-content: center; 
     overflow: hidden; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 #home .home {
     height: 100vh; 
@@ -384,6 +386,27 @@ body { overflow-x: hidden; }
     padding: 15px 0; 
     color: rgb(207, 205, 205);
 }
+.about-me-right .contact-me-button{
+    margin: 10px 0; 
+}
+.contact-me-button button{
+    display: block; 
+    font-size: 1.7rem;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    margin-top: 18px; 
+    padding: 15px; 
+    border: 2px solid rgb(186, 143, 247); 
+    background-color: transparent; 
+    color: rgb(186, 143, 247);
+    letter-spacing: .3rem;
+    transition: .4s ease transform; 
+}
+.contact-me-button button:hover{
+    transform: scale(1.05);
+    background-color: rgb(186, 143, 247);
+    color: white;
+}
 /*Projects*/
 #projects {
     height: auto;
@@ -501,7 +524,7 @@ body { overflow-x: hidden; }
 #footer{ 
     height: auto; 
     width: 100%; 
-    padding: 20px;
+    padding: 10px;
     background-color: black; 
 }
 #footer .footer{
@@ -517,12 +540,12 @@ body { overflow-x: hidden; }
     justify-content: center; 
 }
 #footer .logo img{
-    height: 100px; 
+    height: 80px; 
 }
 #footer .info h1{
     padding-top: 8px; 
     color:white; 
-    font-size: 1.4rem; 
+    font-size: 1.2rem; 
 }
 #footer .links{
     display: flex; 
@@ -530,7 +553,7 @@ body { overflow-x: hidden; }
     justify-content: center; 
 }
 #footer .links img{
-    height: 36px; 
+    height: 30px; 
     margin: 0 10px; 
     transition: .2s ease transform; 
 }
