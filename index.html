@@ -6,30 +6,35 @@
         <meta name = "viewport" content="width=device-width", initial-scale="1.0">
         <title>Tina Liu Portfolio</title>
         <link rel="stylesheet" href="home.css">
+        
     </head>
     <body>
         <!--Header Section -->
         <section id = "header">    
             <div class="header container">
                 <div class="entire-bar">
-                    <div class="logo">
-                        <a href="#home">
-                            <img src = "images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG">
-                        </a>
-                    </div>
-                    <div class = "bigname">
-                        <a href = "#home"><h1>Tina Liu</h1></a>
+                    <div class="upperleft">
+                        <div class="logo">
+                            <a href="#home">
+                                <img src = "images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG">
+                            </a>
+                        </div>
+                        <div class = "bigname">
+                            <a href = "#home"><h1>Tina Liu</h1></a>
+                        </div>
                     </div>
                     <div class="navlist">
-                        <div class="circle"><div class = "bar"></div></div>
+                        <div class="hamburger"><div class="bar"></div></div>
+                        <div class="full">
                         <ul>
-                            <li><a href = "#home" data-after= "Home">Home</a></li>
-                            <li><a href = "#AboutMe" data-after="AboutMe">About Me</a></li>
+                            <li><a href = "#" data-after= "home">Home</a></li>
+                            <li><a href = "#aboutme" data-after="aboutme">About Me</a></li>
                             <li><a href = "#projects" data-after="OverviewProjects">Projects</a></li>
                             <li><a href = "#experiences" data-after="Experiences">Experiences</a></li>
                             <li><a href = "#skills" data-after="Skills">Skills</a></li>
                             <li><a href = "#contactme" data-after = "ContactMe">Contact Me</a></li>
                         </ul> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,13 +50,21 @@
                 <div class="introduction">
                     <h2>Hey,</h2>
                     <h1>I'm <span>Tina Liu</span>!</h1>
-                    <h3>Student.</h3>
+                    <ul class="dynamic-text">
+                        <li><span>Student.</span></li>
+                        <li><span>Developer.</span></li>
+                        <li><span>Designer.</span></li>
+                        <li><span>Artist.</span></li>
+                        <li><span>Creator.</span></li>
+
+
+                    </ul>
                     <a href="images/Tianai_Liu_Resume_RemoveGPA.pdf" download="Tianai_Liu_Resume.pdf">
                         <button>Download My Resume</button>
                     </a>
                 </div>
                 <div class="profile-photo">
-                    <a href = "#AboutMe">
+                    <a href = "#aboutme">
                         <img src ="images/profilephoto.png">
                     </a>
                 </div>
@@ -62,22 +75,94 @@
                 </div>
             </div>
         </section>
-  
         <!--About Me Section --> 
-        <section id = "AboutMe">
+        <section id = "aboutme">
             <div class="about-me container">
-        
-    
+                <div class="about-me-left">     
+                   <div class="imageslider">
+                        <div class="images">
+                            <img id="slide-1" src="images/golf.jpg">
+                            <img id="slide-2" src="images/profilephoto.png">
+                            <img id="slide-3" src="images/thumbsup.png">
+                        </div>
+                        <div class="slider">
+                            <a href="#slide-1" class="button"></a>
+                            <a href="#slide-2" class="button"></a>
+                            <a href="#slide-3" class="button"></a>
+                        </div>
+                   </div>
+                    
+                           
+                </div>
+                <div class="about-me-right">
+                    <div class="about-me-intro">
+                        <h1>About Me</h1>
+                        <div class="links">
+                            <a href="https://www.linkedin.com/in/tinaliu27/">
+                                <img src="images/linkedln.png">
+                            </a>
+                            <a href = "mailto:27tinaliu@gmail.com?">
+                                <img src="images/gmail.png">
+                            </a>
+                            <a href = "https://github.com/tinaliu27" class="github">
+                                <img src="images/github.png">
+                            </a>
+                        </div>
+                        <div class="about-me-text">
+                            <h2>Hi!</h2>
+                            <h2>I'm Tianai (Tina) Liu and I'm currently a 3rd year student at the University of British Columbia! I'm in the process of receiving a Bachelor of Arts in Computer Science with a minor in Management. </h2>
+                            <h2>I'm an aspiring Software Engineer and UX Designer. In my spare time, I enjoy playing tennis, watching movies (100% recommend The Social Network), and hanging out with my friends! 
+                                Find out more about me on this website! </h2>
+                            <h2>Thanks! :) </h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
-             <!--
-        Projects
-        <section id = "OverviewProjects">
+        <!--Projects-->
+        <section id = "projects">
             <div class="projects container">
-
+                <div class="topic"><h1>Featured Projects</h1><h2></h2></div>
+                <span></span>
+                <div class="featured-projects">
+                    <div class="fullproject" alt="project-1">
+                        <div class="header">
+                            <h1>The SocioEconomic Bias of Not-So-Standarized Testing</h1>
+                            <h3>By Tina Liu, Noah Stasuik, and Peter Idoko</h3>
+                            <h2></h2>
+                        </div>
+                        <div class="description">
+                            <h2>Explored a dataset on <span>Student Performance in Exams</span> by creating data visualizations and analysis on different socioeconomic factors that impact student performance on Standarized Tests. </h2>                            <h4>Tools: Python, Pandas, NumPy, Git </h4>
+                        </div>
+                    </div>
+                    <div class="fullproject" alt="project-2">
+                        <div class="header">
+                            <h1>Personal Portfolio</h1>
+                            <h3>By Tina Liu</h3>
+                            <h2></h2>
+                        </div>
+                        <div class="description">
+                            <h2>Created the website you are currently on! Present work experience, education, projects, and portolio through an aesthetic design. Considered User Experience and UX. </h2>
+                            <h4>Tools: HTML, CSS, Node.js, JavaScript, Figma</h4>
+                        </div>
+                
+                    </div>
+                    <div class="fullproject" alt="project-3">
+                        <div class="header">
+                            <h1>Optimized Pong Game</h1>
+                            <h3>By Tina Liu</h3>
+                            <h2></h2>
+                        </div>
+                        <div class="description">
+                            <h2>Updated and optimized a pong project game from 1st year to strengthen programming and design skills. </h2>
+                            <h4>Tools: Java (Processing) </h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!--
         Other Experiences
         <section id = "Experiences">
             <div class="experiences container">
@@ -98,19 +183,61 @@
         </section>
 
         -->
-
+        <section id="footer">
+            <div class="footer container">
+                <div class="info">
+                    <div class="logo">
+                        <a href="#"><img src="images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG"></a>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/tinaliu27/">
+                            <img src="images/linkedln.png">
+                        </a>
+                        <a href = "mailto:27tinaliu@gmail.com?">
+                            <img src="images/gmail.png">
+                        </a>
+                        <a href = "https://github.com/tinaliu27" class="github">
+                            <img src="images/github.png">
+                        </a>
+                    </div>
+                    <h1>By Tina Liu </h1>
+                    </div>
+            </div>
+        </section>
+        <script src="photogallery.js"></script>
         <script>
+            var viewportWidth  = document.documentElement.clientWidth;
+            var viewportHeight = document.documentElement.clientHeight;
+
             document.addEventListener('scroll', () => {
             const header = document.querySelector('#header'); 
-            if(window.scrollY > 0) {
-                header.classList.add('scrolled'); 
-            } else {
-                header.classList.remove('scrolled');
+                if(window.scrollY > 0) {
+                    header.classList.add('scrolled'); 
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            })
+            const text = document.quertSelector(".person");
+            const textload = () => {
+                setTimeout(() => {
+                    text.textContent = "Student";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Developer";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Artist";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Volunteer";
+                }, 0);
             }
-        })
+            textload();
         </script>
+
 
     
     </body>
 </html>
 </html>
+
