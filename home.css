@@ -131,18 +131,24 @@ body { overflow-x: hidden; }
     background-attachment: fixed; 
 }
 #home .home {
-    height: 100vh; 
-    max-width: 1200px; 
-    max-height: 500px; 
-    justify-content: space-between; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 1000px; 
+    max-height: 600px;
     text-align: center;
+    justify-content: center;
     align-items: center;     
-    display: flex;
-    padding: 0 100px; 
-    margin: 100px;
 }
+#home .home .top{
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
 #home .background{
-    display: block; 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -150,7 +156,6 @@ body { overflow-x: hidden; }
     height: 100%; 
     z-index: -1; 
     object-fit: cover; 
-    width: 100%; 
 }
 #home::after{
     content: '';
@@ -167,41 +172,25 @@ body { overflow-x: hidden; }
     position: relative; 
     color: white;
     text-align: left; 
-    display: block; 
-    width: 100%; 
-    padding: 30px; 
-    margin: 10px; 
-}
-#home .introduction h3{
-    font-size: 2.6rem; 
-    color: rgb(186, 143, 247);
+    display: inline-block; 
+    align-items: center; 
+    justify-content: center;
+    margin: 10px;
 }
 #home .introduction h1{
     padding: 2.4px; 
-    font-size: 3.5rem;
+    font-size: 4.2rem;
 }
 
 #home .introduction h1 span{
     color: rgb(186, 143, 247);
+    animation: reveal_name 1s ease forwards;
+
 }
-#home .introduction .dynamic-text li {
-    list-style: none;
-    text-decoration: none; 
-    font-size: 2rem;
-    color: rgb(186, 143, 247);
-}
-#home .introduction .dynamic-text li span{
-    position: relative; 
-}
-#home .introduction .dynamic-text li span::after{
-    left: 0; 
-    content: "";
-    position: absolute; 
-    height: 100%; 
-    width: 100%; 
-    background-color: transparent; 
-    border-left: 2px solid rgb(186, 143, 247); 
-    animation: typing 1.5s steps(10) infinite; 
+#home .introduction .text-show{
+    color: white;
+    opacity: 1;
+    transition: all 1s ease; 
 }
 
 #home .person span{
@@ -226,9 +215,12 @@ body { overflow-x: hidden; }
     background-color: white;  
 }
 #home .profile-photo { 
-    padding: 0px;
+    display: inline-block; 
     position: relative; 
-    width: 100%; 
+    animation: fadeIn 2s;
+    margin: 0 auto;
+    align-items: center; 
+    justify-content: center;
 }
 #home .profile-photo img{
     height: 350px; 
@@ -240,21 +232,7 @@ body { overflow-x: hidden; }
     border-radius: 50%; 
  
 }
-#home .credit{
-    position: absolute;
-    bottom: 0; 
-    right: 0; 
-    width: 100%; 
-    text-align: right; 
-    padding: 10px; 
 
-}
-#home .credit img{
-    bottom: 0; 
-    right: 0; 
-    width: 50px; 
-    height: 30px; 
-}
 
 /*About Me */
 #aboutme{
@@ -397,15 +375,19 @@ body { overflow-x: hidden; }
     margin-top: 18px; 
     padding: 15px; 
     border: 2px solid rgb(186, 143, 247); 
+    box-shadow: 10px 10px 1px 1px white;
     background-color: transparent; 
     color: rgb(186, 143, 247);
     letter-spacing: .3rem;
-    transition: .4s ease transform; 
+    transition: 4s ease transform; 
+    transition: box-shadow 1s ease-out;
+    border-radius: 20%; 
 }
-.contact-me-button button:hover{
-    transform: scale(1.05);
+
+.contact-me-button button:active{
     background-color: rgb(186, 143, 247);
     color: white;
+    box-shadow: 0px 0px 0px 0px rgb(186, 143, 247);
 }
 /*Projects*/
 #projects {
@@ -434,6 +416,7 @@ body { overflow-x: hidden; }
     margin: 0 40px; 
 }
 .projects .topic h2{
+    display: inline-block;
     justify-content: center;
     text-align: left; 
     align-items: center; 
@@ -458,26 +441,45 @@ body { overflow-x: hidden; }
     width: 35%; 
     border: 2px solid white; 
     display: block;
-    padding: 30px; 
-    margin: 20px; 
-    border-radius:20px; 
+    border-radius: 20px; 
     box-shadow: 0px 0px 10px 2px purple; 
+    overflow: hidden; 
+    margin: 20px;
+    background-color: black;
 }          
+.projects .featured-projects .fullproject .header{ 
+    margin: 0 auto; 
+}
+.projects .featured-projects .fullproject .header img{ 
+    max-width: 100%;
+    height: auto;
+    position: center; 
+    overflow: hidden;
+    vertical-align: middle;
+}
+.projects .featured-projects .fullproject .header img:hover{ 
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in;
+}
 .projects .featured-projects .fullproject:hover{
-    transform: scale(1.03);
     box-shadow: 0px 0px 10px 5px purple; 
 
+
+
 }
-.featured-projects .fullproject .header h1{
+.featured-projects .fullproject .bottom{
+    padding: 10px 30px 30px 30px; 
+}
+.featured-projects .fullproject  h1{
     margin: 5px 0;
     text-transform: uppercase; 
     font-size: 2.4rem;
 }
-.featured-projects .fullproject .header h3{
+.featured-projects .fullproject h3{
     margin: 20px 0;
     color: white;
 }
-.featured-projects .fullproject .header h2{
+.featured-projects .fullproject h2{
     height: 5px; 
     width: 70px; 
     left: 0;
@@ -485,7 +487,7 @@ body { overflow-x: hidden; }
     align-items: center; 
     text-align: left; 
     background-image: linear-gradient(to right, rgb(68, 48, 180), rgb(145, 22, 145));
-    animation: line_reveal .2s ease forwards; 
+
 }
 .featured-projects .fullproject .description{
 
@@ -501,16 +503,45 @@ body { overflow-x: hidden; }
     padding: 20px 0; 
     font-size: 1.3rem; 
 }
-.featured-projects .fullproject .button{
-    box-shadow: 0px 0px 10px 2px rgb(186, 143, 247);
-    border: 1px solid white; 
+.bottom .description img{
+    display: inline-block;
+    height: 33px;
+    filter: invert(1);
+    margin: 0 18px;
+    margin-left: 0px;
+    transition: transform .2s ease-in;
+}
+.bottom .description img:hover{
+    transform: scale(1.1);
+
+}
+.bottom .go{
     width: fit-content; 
     bottom: 0; 
+    padding: 10px 20px 10px 0;
     background-color: transparent; 
     text-decoration: none; 
     left: 0; 
-    
+    display: inline-block;
 }
+.bottom .go h1{
+    color: white;
+    font-size: 1.9rem;
+    display: inline-block;
+    text-transform: none;
+}
+.bottom .go .arrow{
+    filter: invert(1);
+    height: 25px;
+    margin-left: 10px; 
+    display: inline-block;
+    transition: margin-left .5s ease; 
+    transform: rotate(90deg);
+}
+.bottom .go:hover .arrow{
+    margin-left: 20px;
+}
+
 .featured-projects .fullproject a button{
     text-decoration: none; 
     display: block; 
@@ -568,6 +599,23 @@ body { overflow-x: hidden; }
     100%{
         left: 100%; 
         margin: 0 -35px 0 15px; 
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes reveal_name{
+    30%{
+        height: 100%;
+        bottom: 0;
+        color:white;
+    }
+    100% {
+        height: 0; 
+        bottom: 100%; 
+        color: rgb(139, 68, 238);
     }
 }
 

@@ -144,7 +144,7 @@ body { overflow-x: hidden; }
     display: block; 
     height: auto; 
     padding: 20px; 
-    margin: 30px; 
+    margin: 30px 10px; 
     background-image: linear-gradient(lightgray, gray);
     border-radius: 30px; 
 }
@@ -180,22 +180,76 @@ body { overflow-x: hidden; }
 .left-resume .socialmedialink img:hover{
     transform: scale(1.2);
 }
+.left-resume .skills{
+    display: block; 
+}
 
 #resume .resume .right-resume{
     border: 3px solid purple;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
     display: flex; 
     position: relative; 
     text-align: left; 
     width: 65%; 
     padding: 20px; 
-    margin: 30px; 
+    margin: 30px 10px; 
+    border-radius: 30px; 
+    background-color: black;
 }
 .right-resume .fullresume {
     display: block; 
     position: relative; 
 }
 .right-resume .education{
+    display: flex; 
     height: auto; 
-    background-color: black; 
+} 
+.right-resume .education .header{
+    display: flex; 
+    text-align: left; 
+    justify-content: left; 
+    top: 0; 
+    left: 0; 
+}
+.education .header img{
+    filter: invert(1); 
+    height: 50px;
+}
+.education .heder h1{
+    text-transform: uppercase; 
+}
+
+.education .info{
+    display: block; 
+    margin: 0 10px;
+    padding: 5px; 
+    position: relative; 
+    line-height: 1.3; 
+} 
+.education .info .header{
+    display: flex; 
+    color:rgb(186, 143, 247);
+    text-transform: uppercase; 
+    font-size: 2rem; 
+}
+.education .info .university{
+    display: block; 
+    line-height: 1.5;
+}
+.education .info .university h1{
+    display: inline;
+    line-height: 3rem;
+}
+.education .info .university h2{
+    display: inline; 
+    float: right; 
+    
+}
+.education .university ul{
+    margin: 0 40px;
+    line-height: 1.5; 
+    font-size: 1.2rem;
+
 }
 

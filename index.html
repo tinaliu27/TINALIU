@@ -30,7 +30,7 @@
                             <li><a href = "#" data-after= "home">Home</a></li>
                             <li><a href = "#aboutme">About Me</a></li>
                             <li><a href = "#projects" data-after="OverviewProjects">Projects</a></li>
-                            <li><a href = "projects.html" data-after="Experiences">Experiences</a></li>
+                            <li><a href = "experience.html" data-after="Experiences">Experiences</a></li>
                             <li><a href = "contact-me.html" data-after = "ContactMe">Contact Me</a></li>
                         </ul> 
                         </div>
@@ -40,38 +40,25 @@
         </section>
         <!--Home Section -->
         <section id = "home">
-            <div class="home container">
-                <div class="background">
-                    <video autoplay loop muted plays-inline class="background-video">
-                        <source src="images/stars_video.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="introduction">
-                    <h2>Hey,</h2>
-                    <h1>I'm <span>Tina Liu</span>!</h1>
-                    <ul class="dynamic-text">
-                        <li><span>Student.</span></li>
-                        <li><span>Developer.</span></li>
-                        <li><span>Designer.</span></li>
-                        <li><span>Artist.</span></li>
-                        <li><span>Creator.</span></li>
-
-
-                    </ul>
-                    <a href="images/Tianai_Liu_Resume_RemoveGPA.pdf" download="Tianai_Liu_Resume.pdf">
-                        <button>Download My Resume</button>
-                    </a>
-                </div>
-                <div class="profile-photo">
-                    <a href = "#aboutme">
-                        <img src ="images/profilephoto.png">
-                    </a>
-                </div>
-                <div class="credit">
-                    <a href = "https://www.youtube.com/watch?v=KEOj1puuPYA">
-                        <img src="images/youtube_logo.webp">
-                    </a>
-                </div>
+            <div class="home container">     
+                    <div class="background">
+                        <video autoplay loop muted plays-inline class="background-video">
+                            <source src="images/shortstar.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="introduction">
+                        <h2>Hey,</h2>
+                        <h1>I'm <span>Tina Liu</span>!</h1>
+                   
+                        <a href="images/Tianai_Liu_Resume_RemoveGPA.pdf" download="Tianai_Liu_Resume.pdf">
+                            <button>Download My Resume</button>
+                        </a>
+                    </div>
+                    <div class="profile-photo">
+                        <a href = "#aboutme">
+                            <img src ="images/profilephoto.png">
+                        </a>
+                    </div>
             </div>
         </section>
         <!--About Me Section --> 
@@ -126,54 +113,83 @@
             </div>
         </section>
         <!--Projects-->
+        <!-- HTML !-->
         <section id = "projects">
             <div class="projects container">
                 <div class="topic"><h1>Featured Projects</h1><h2></h2></div>
                 <span></span>
                 <div class="featured-projects">
                     <div class="fullproject" alt="project-1">
-                        <div class="header">
-                            <h1>The SocioEconomic Bias of Not-So-Standarized Testing</h1>
-                            <h3>By Tina Liu, Noah Stasuik, and Peter Idoko</h3>
-                            <h2></h2>
-                        </div>
-                        <div class="description">
-                            <h2>Explored a dataset on <span>Student Performance in Exams</span> by creating data visualizations and analysis on different socioeconomic factors that impact student performance on Standarized Tests. </h2>                            
-                            <h4>Tools: Python, Pandas, NumPy, Tableau, MatLab </h4>
-                            <a href="projects.html">
-                                <button>Learn More</button>
-                            </a>
-                        </div>
+                            <div class="header">
+                                <img src="images/cosc301.jpeg">
+                            </div>
+                            <div class="bottom">
+                                <div class="description">
+                                    <h1>The SocioEconomic Bias of Not-So-Standarized Testing</h1>
+                                    <h2></h2>
+                                    <h3>By Tina Liu, Noah Stasuik, and Peter Idoko</h3>
+                                   <div class="tools">
+                                        <img src="images/python.png">
+                                        <img src="images/pandas.png">
+                                        <img src="images/numpy.png">
+                                        <img src="images/tableau.png">
+                                        <img src="images/matlab.png">
+                                   </div>
+                                </div>
+                                <div class="go">
+                                    <a href="projects.html">
+                                        <h1>Learn More</h1>
+                                        <img class="arrow" src="images/spaceship.png">                             
+                                    </a>
+                                </div>     
+                            </div>   
                     </div>
-                
                     <div class="fullproject" alt="project-2">
                         <div class="header">
-                            <h1>Personal Portfolio</h1>
-                            <h3>By Tina Liu</h3>
-                            <h2></h2>
+                            <img src="images/personalportfolio.png">
                         </div>
-                        <div class="description">
-                            <h2>Created the website you are currently on! Present work experience, education, projects, and portolio through an aesthetic design. Considered User Experience and UX. </h2>
-                            <h4>Tools: HTML, CSS, Node.js, JavaScript, Figma</h4>
-                            <a href="projects.html">
-                                <button>Learn More</button>
-                            </a>
-                        </div>
-                
+                        <div class="bottom">
+                            <div class="description">
+                                <h1>Personal Portolio</h1>
+                                <h2></h2>
+                                <h3>By Tina Liu</h3>
+                               <div class="tools">
+                                    <img src="images/html.png">
+                                    <img src="images/css.svg">
+                                    <img src="images/javascript.png">
+                                    <img src="images/figma.png">
+                               </div>
+                            </div>
+                            <div class="go">
+                                <a href="projects.html">
+                                    <h1>Learn More</h1>
+                                    <img class="arrow" src="images/spaceship.png">                             
+                                </a>
+                            </div>     
+                        </div>   
+                </div>
+                <div class="fullproject" alt="project-3">
+                    <div class="header">
+                        <img src="images/mhs.jpeg">
                     </div>
-                    <div class="fullproject" alt="project-3">
-                        <div class="header">
-                            <h1>Millburn-Short Hills Historical Society Historical Interviews</h1>
-                            <h3>By Tina Liu</h3>
-                            <h2></h2>
-                        </div>
+                    <div class="bottom">
                         <div class="description">
-                            <h2>Conducted historical interviews about residents from Millburn/Short Hills NJ to preserve local history. Asked relevant questions and edited interviews for Township Council.</h2>
-                            <h4>Tools: IMovie, Vimeo </h4>
-                            <a href="projects.html">
-                                <button>Learn More</button>
-                            </a>
+                            <h1>Millburn-Short Hills Historical Society Historical Interviews</h1>
+                            <h2></h2>
+                            <h3>By Tina Liu</h3>
+                           <div class="tools">
+                                <img src="images/vimeo.png">
+                           </div>
                         </div>
+                        <div class="go">
+                            <a href="projects.html">
+                                <h1>Learn More</h1>
+                                <img class="arrow" src="images/spaceship.png">                             
+                            </a>
+                        </div>     
+                    </div>   
+            </div>
+                
                     </div>
                 </div>
             </div>
@@ -234,22 +250,21 @@
                     header.classList.remove('scrolled');
                 }
             })
-            const text = document.quertSelector(".person");
-            const textload = () => {
-                setTimeout(() => {
-                    text.textContent = "Student";
-                }, 0);
-                setTimeout(() => {
-                    text.textContent = "Developer";
-                }, 0);
-                setTimeout(() => {
-                    text.textContent = "Artist";
-                }, 0);
-                setTimeout(() => {
-                    text.textContent = "Volunteer";
-                }, 0);
+            const text = ["example 1", "example 2", "example 3", "example 4"];
+            let counter = 0;
+            setInterval(change, 5000);
+            function change() {
+            documen.getElementById("faded").setAttribute("class", "text-fade");
+
+            setTimeout(() => {
+                document.getElementById("fadeEl").innerHTML = text[counter];
+                document.getElementById("fadeEl").setAttribute("class", "text-show");
+            }, 1000)
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
             }
-            textload();
+}
         </script>
 
 
