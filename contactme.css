@@ -22,7 +22,7 @@ body { overflow-x: hidden; min-height: 100vh;
 }
 
 #contact {
-    background-image: url("images/newgif.gif");
+    background-image: url("Images/newgif.gif");
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-size: cover; 
