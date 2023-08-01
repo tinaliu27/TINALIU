@@ -138,7 +138,7 @@ a {
     width: 100%;
 }
 .top .text{
-    margin: 50px 200px;
+    margin: 50px 220px;
     justify-content: center;
     align-items: center; 
     width: 100%; 
@@ -186,89 +186,262 @@ a {
     display: flex; 
 }
 #resume .resume{
-    margin: 0px 150px; 
-    border: 2px solid red;
+    margin: 20px 150px; 
     position: relative; 
     margin-top: -190px;
     background-color: black; 
     display: block; 
     min-height: 32vh;
+    box-shadow: 7px 3px 20px 1px rgb(43, 42, 42); 
 
 }
 .resume .resume-top{
     background-color: rgb(183, 183, 183);
     display: inline-block;
     width: 100%; 
-    justify-content: center; 
     align-items: center; 
-    text-align: center; 
-    height: auto; 
+    overflow: hidden; 
+    height: 35vh; 
+    flex-direction: row; 
 }
 .resume-top .left{
-    display: inline-block;
-    width: 27%;
+    width: 26%;
     justify-content: flex-start; 
-    border: 2px solid blue; 
-    height: auto;  
     float: left; 
-    overflow: hidden; 
+    max-height:39vh;
+
 }
 .resume-top .left img{
-    justify-content: left; 
     align-items: center; 
-    height: 100%;
-    width: 100%; 
+    width: 50%; 
+    top: 0; 
+    left: 0; 
+    margin: 0 auto; 
     position: relative; 
-    min-height: 32vh;
-    min-width: 40vh;
+    width: 100%;
+    max-height: 354vh;
+
 }
 .resume-top .right{
+    flex-direction:row; 
     display: inline-block; 
-    width: 73%;
-    align-items: center;
-    border: 2px solid red;
+    width: 71%;
     justify-content: center; 
-    text-align: left;   
-    float: right; 
-    height: 100%; 
+    text-align: left; 
+    max-height: 35vh;
+    position: relative; 
+    overflow: hidden; 
+    padding: 15px;
+
 }
 .resume-top .right .header{
     display: inline-block;
+    align-items: center; 
+    line-height: 2.5rem;
+    position: relative;
+    margin: 30px 0; 
+    width: 50%; 
+    padding: 10px;
+}
+.resume-top .right .header h1{
+    font-size: 3.2rem;
+    padding-bottom: 10px; 
+    text-transform: uppercase;
 }
 .resume-top .right .links{
     float: right;
-    text-align: left; 
-    border: 2px solid white; 
     display: inline-block;
-    justify-content: right; 
+    width: 50%; 
+    position:relative; 
+    padding: 10px 40px;
+    overflow: hidden;
 }
 .resume-top .right .links a{ 
-    display: block; 
-    padding: 42px 20px;
+    display: flex; 
+    left: 0; 
+    padding: 25px 0;
+    align-items: center;
+    justify-content: flex-start; 
+
 }
 .resume-top .right .links img{
-    height: 32vh;
+    height: 4vh;
+    display: inline-block;
+
 }
 .resume-top .right .links h1{
     display: inline-block; 
+    padding-left: 20px; 
+    color:black; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px; 
+
 }
-.resume-top .right .links img{
-    height: 3vh; 
+.resume-top .right .links h1:hover{
+    color:blue;
 }
 
+.links .mail img{
+    height: 6vh;
+}
 .resume .resume-bottom{
     background-color: white;
-    padding: 20px; 
-}
-.resume .resume-bottom .top{
-    display: inline-block;
-}
-.resume .resume-bottom .top .border{ 
-    height: 5px; 
-    width: 70%; 
-    background-image: linear-gradient(to right, rgb(68, 48, 180), rgb(145, 22, 145));
+    padding: 30px; 
     display: inline-block; 
 }
+.resume .resume-bottom .top{
+    display: block;
+    border: 2px solid purple; 
+}
+.resume-bottom .top h1{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.resume .resume-bottom .top .border{ 
+    height: 3.5px; 
+    width: 87%; 
+    margin: 10px 0; 
+    margin-left: 20px; 
+    overflow: hidden; 
+    align-items: center; 
+    background-image: linear-gradient(to right, rgb(68, 48, 180), rgb(145, 22, 145));
+    display: inline-block; 
+    position: relative; 
+}
+.resume .resume-bottom .left{
+    display: inline-block; 
+    max-width: 70%; 
+    min-width: 60%; 
+    position: relative; 
+    justify-content: flex-start; 
+    margin-top: 10px; 
+    overflow: hidden;
+}
+/*Buttons */
+.resume .resume-bottom .left .items{
+    display: grid; 
+}
+.resume-bottom .left .buttons{
+    display: inline-block; 
+    border: 2px solid red; 
+    width: 100%;
+
+}
+.resume-bottom .left button{
+    display: inline-block; 
+    font-size: 1.7rem; 
+    text-decoration: none;
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0 70px; 
+    padding-left: 0px;
+}
+.resume-bottom .left button:hover{
+    color: rgb(186, 143, 247);
+}
+.resume-bottom .left .line{
+    height: 3.5px; 
+    width: 100%; 
+    overflow: hidden; 
+    align-items: center; 
+    justify-content: flex-end; 
+    background-image: linear-gradient(to right, rgb(68, 48, 180), rgb(145, 22, 145));
+    display: inline-block; 
+    position: relative; 
+}
+
+/*Content Inside*/
+.resume-bottom .left .content {
+    display: none; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black; 
+    width: 100%;
+    height: auto; 
+    overflow: hidden; 
+    margin-top: 15px;
+}
+.resume-bottom .left .content .box{
+    border-left: 2px solid rgb(186, 143, 247);
+    padding: 10px;
+    padding-top: 0px;
+    margin-right: 0px; 
+    padding-right: 0px; 
+
+}
+.resume-bottom .left .content .item::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px; 
+    border-radius: 50%;
+    top: 50;
+    left: 0;  
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 1.9px;
+    border: 4px solid rgb(186, 143, 247);
+    box-shadow:1px 1px 10px 1px rgb(186, 143, 247);
+}
+.content .item{
+    display: block;
+    line-height: 2rem;
+    margin: 15px 15px;
+    margin-top: 0px; 
+    padding-top: 0px;
+    margin-right: 0px; 
+    padding-right: 0px; 
+
+}
+.content .item h1{
+    font-weight: bold;
+
+}
+.content .item h1 span{
+    color: rgb(165, 119, 229);
+}
+.content .item h2{
+    
+}
+.content .item li{
+    display: inline-block;
+    justify-content: flex-start; 
+}
+
+
+
+
+/*Right side of resume*/
+.resume-bottom .right {
+    width: 25%; 
+    border: 2px solid red; 
+    display: inline-block; 
+    justify-content: flex-end; 
+    margin-top: 10px; 
+    float: right; 
+    clear: both;
+
+}
+.resume-bottom .right .skills{
+    display: block; 
+}
+.skills h1{
+    font-size: 1.7rem; 
+
+}
+.skills .line{
+    background-image: linear-gradient(to right, rgb(68, 48, 180), rgb(145, 22, 145));
+    height: 3.5px; 
+    width: 100%; 
+    overflow: hidden; 
+    align-items: center; 
+    display: block; 
+}
+
+
 /*
 #resume{
     height: auto; 
@@ -402,48 +575,8 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 
 }
 */
-
-/*Footer*/
-#footer{ 
-    height: auto; 
-    width: 100%; 
-    padding: 10px;
-    background-color: black; 
+@media only screen and (min-width: 1200px) {
+    .resume .resume-bottom .left{
+        width: 70%;
+    }
 }
-#footer .footer{
-    margin: 0 auto; 
-    display: flex; 
-    text-align: center;
-    justify-content: center; 
-    overflow: hidden; 
-}
-#footer .logo{
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-}
-#footer .logo img{
-    height: 80px; 
-}
-#footer .info h1{
-    padding-top: 8px; 
-    color:white; 
-    font-size: 1.2rem; 
-}
-#footer .links{
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-#footer .links img{
-    height: 30px; 
-    margin: 0 10px; 
-    transition: .2s ease transform; 
-}
-#footer .links .github img{
-    filter: invert(1); 
-}
-#footer .links img:hover{
-    transform: scale(1.3);
-}
-

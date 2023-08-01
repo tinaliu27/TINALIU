@@ -68,13 +68,13 @@
                             <h2>Software Developer</h2>
                         </div>
                         <div class="links">
+                            <a href = "mailto:27tinaliu@gmail.com?">
+                                <img src="Images/mail_FILL0_wght400_GRAD0_opsz48.png" class="mail">
+                                <h1>27tinaliu@gmail.com</h1>
+                            </a>
                             <a href="https://www.linkedin.com/in/tinaliu27/">
                                 <img src="Images/linkedln.png">
                                 <h1>linkedin.com/in/tinaliu27/</h1>
-                            </a>
-                            <a href = "mailto:27tinaliu@gmail.com?">
-                                <img src="Images/gmail.png" >
-                                <h1>27tinaliu@gmail.com</h1>
                             </a>
                             <a href = "https://github.com/tinaliu27" class="github">
                                 <img src="Images/github.png">
@@ -89,30 +89,171 @@
                         <h2>Experience with leading teams for software and curriculum development. Can effectively lead others while also being an active team member. I am an active problem-solver, communicator, and innovator in and out of the classroom. Eager to make a difference in the world via technology and design!</h2>
                     </div>
                     <div class="left">
-                        <button id="education"></button>
-                        <button id="work"></button>
-                        <button id="volunteer"></button>
-                        <button id="awards"></button>
-                        <div class="line"></div>
-                        <div class="education">
-                            <h1>Edcuation</h1>
+                        <div class="items">
+                            <div class="buttons">
+                                <button onclick="showContent(1)">Education</button>
+                                <button onclick="showContent(2)">Work</button>
+                                <button onclick="showContent(3)">Volunteer</button>
+                                <button onclick="showContent(4)">Awards</button>
+                                <div class="line"></div>
+                            </div>
+                            <div class="content" id="content1">
+                                <div class="box">
+                                    <div class="item">
+                                        <h1>The University of British Columbia </h1>
+                                        <h2>2021 - Expected 2025</h2>
+                                        <div class="info">
+                                            <li>
+                                                <ul>Coursework: Data Structures, Intro to Data Analytics, Introduction to Discrete Structures, Matrix Algebra,
+                                                    Machine Architecture, Information Technology Management, Human Computer Intercation (in progress), Software Engineering (in progress), Introduction to Databases (in progress) </ul>
+                                                <ul>Clubd and Activites: Vice President of UBCO Tennis Club, Interim Events Coordinator of QSCU, Social Media Coordinator of The Phoenix News, Member of Computer Science Course Union, Member of GirlsInTech, Orientation Leader</ul>
+                                            </li>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="item">
+                                        <h1>The National University of Singapore - Exchange Program</h1>
+                                        <h2>2024</h2>
+                                        <h3>Starting in January 2024</h3>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Millburn High School</h1>
+                                        <h2>2017-2021</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" id="content2">
+                                <div class="box">
+                                    <div class="work-experience">
+                                        <div class="item">
+                                            <h1>Backend Engineer Intern @ <span>Perceptify</span></h1>
+                                            <h2>2023</h2>
+                                            <h3>Remote</h3>
+                                            <li>
+                                                <ul>Developing data scraping functions to extract data on Instagram with APIs (instascrape) to provide sentiment analysis on
+                                                    hashtag, story, and comment mentions for different companies for early-stage start-up in the business sector</ul>
+                                                <ul>Debugging and improving existing Python code by scraping irrelevant data to provide consistent sentiment analysis for
+                                                    popular social media Afrom the last 5 days improving accuracy and efficiency while also writing a significant portion of code
+                                                    for company’s backend team.</ul>
+                                                <ul>Working with Supabase to store sentiment analysis, connecting front end and back-end functionalities</ul>
+                                            </li>
+                                        </div>
+                                        <div class="item">
+                                            <h1>Lead Curriculum Developer @ <span>AiTudier</span></h1>
+                                            <h2>2022</h2>
+                                            <h3>Remote</h3>
+                                            <li>
+                                                <ul>Led a team of 15+ interns to complete a 42-unit curriculum on EESC, Internet of Things, and C++ by conducting daily
+                                                    checkups on Slack, planning weekly google meets, and discussing individual goals</ul>
+                                                <ul>Designed and improved 20+ units on Arduino Boards and C++ programming basics by creating engaging questions,
+                                                    activities, and quizzes to accommodate different learning styles.</ul>
+                                                <ul>Managed and developed entire curriculum developer internship program by working with co-founders and
+                                                    frontend/backend team leads, interviewing potential candidates, and creating an innovative and unique curriculum from
+                                                    scratch.</ul>
+                                            </li>
+                                        </div>
+                                        <div class="item">
+                                            <h1>Social Media Coordinator @ <span>The Phoenix News</span></h1>
+                                            <h2>2022-2023</h2>
+                                            <h3>Kelowna, BC</h3>
+                                            <li>
+                                                <ul>Manage and schedule social media content for the Phoenix News Instagram and Tiktok account by posting new articles,
+                                                    interviews, and updates that increased followers by 15% and engagement by 61%</ul>
+                                                <ul>Design posts and stories to match color schemes, engage with followers, and recommend topics for writers that are relevant
+                                                    to students and trends.</ul>
+                                            </li>
+                                        </div>
+                                        <div class="item">
+                                            <h1>Recruiting Coordinator @ <span>Birdseye Publication</span></h1>
+                                            <h2>2023</h2>
+                                            <h3>Remote</h3>
+                                            <li>
+                                                <ul>Identify and recruit new candidates for Birdseye Publication, a student run publication that publishes informative articles
+                                                    on entrepreneurs, through online job boards, professional networks, and referrals.</ul>
+                                                <ul>Review and evaluate resumes to assess qualifications and suitability for several positions with President.</ul>
+                                            </li>
+                                        </div>
+                                        <div class="item">
+                                            <h1>Orientation Leader @ <span>UBC</span></h1>
+                                            <h2>2023</h2>
+                                            <h3>Kelowna, BC</h3>
+                                            <li>
+                                                <ul>*Starting in August 2023*</ul>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" id="content3">
+                                <div class="box">
+                                    <div class="item">
+                                        <h1>Vice President of UBCO Tennis Club</h1>
+                                        <h2>2022-Current</h2>
+                                        <li>
+                                            <li>Assist in planning tournaments, Meet & Greets, and weekly hitting sessions to <span>100+ members</span></li>
+                                            <li>Promoted from Girls Coordinator to Treasurer to Vice President within a year</li>
+                                        </li>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Interim Events Coordinator of Quantitative Sciences Course Union</h1>
+                                        <h2>2023</h2>
+                                        <li>
+                                            <ul>Assist in the planning of major and minor events to ensure events run smoothly.</ul>
+                                            <ul>Reach out to professors, companies, students, and others.</ul>
+                                        </li>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Python Tutor for The C.O.D.E. Initiative Foundation</h1>
+                                        <h2>2023</h2>
+                                        <li>
+                                            <ul>Insert Description Here </ul>
+                                        </li>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Tutor for Quarantine Tutors</h1>
+                                        <h2>2020-2021</h2>
+                                        <li>
+                                            <ul>Spent 150+ hours teaching a wide range of subjects including Python, Algebra, Chemistry, Calculus, and English to students ranging from grades 1-10. </ul>
+                                            <ul>Provided tailored assignments and focused on improving overall confidence and mental health during peak of the pandemic.</ul>
+                                        </li>
+                                    </div>
+                                    <div class="item">
+                                        <h1>SAT Tutor for Strive2Thrive</h1>
+                                        <h2>2020-2021</h2>
+                                        <li>
+                                            <ul>Taught and organized a 10 week curriculum to teach SAT to students n=in Myanmar. </ul>
+                                            <ul>Students on average improved by 100+ points.</ul>
+                                            <ul>Provided free resources and college counselling for international students/</ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" id="content4">
+                                <div class="box">
+                                    <div class="item">
+                                        <h1>Deputy Vice Chancellor Scholarship</h1>
+                                        <h3>Deputy Vice-Chancellor scholarships (DVC) are awarded to continuing domestic undergraduate students entering second, third, or fourth year at UBC’s Okanagan campus. Scholarships are based on academic achievement in the previous year.</h3>
+                                    </div>
+                                    <div class="item">
+                                        <h1>AP Scholar with Honors</h1>
+                                        <h3>Granted to students who receive an average score of at least 3.25 on all AP Exams taken, and scores of 3 or higher on four or more of these exams.</h3>
+                                    </div>
+                                    <div class="item">
+                                        <h1>High Merit and Published Artist (3x) on Celebrating Art</h1>
+                                        <h3>Published 3 art pieces on Celebrating Art. Top 25% of submissions are invited to published. </h3>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Millburn Institute of Talent Chinese Language Scholar</h1>
+                                        <h3>Received a scholarship through Millburn Institute of Talent Chinese Language Scholar for AP Chinese.</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="work">
-                            <h1>Work</h1>
-                        </div>
-                        <div class="volunteer">
-                            <h1>Volunteering</h1>
-                        </div>
-                        <div class="awards">
-                            <h1>Awards</h1>
-                        </div>
-
-
                     </div>
                     <div class="right">
                         <div class="skills">
-                            <div class="line"></div>
                             <h1>Skills & Tools</h1>
+                            <div class="line"></div>
                             <h2>Frontend</h2>
                             <h3>HTML/CSS</h3>
                             <h3>Javascript</h3>
@@ -133,6 +274,7 @@
 
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </sectio>        
@@ -324,6 +466,23 @@
         </section>
         -->
         <!--Footer-->
+
+        <script>
+            function showContent(contentNumber) {
+            // Hide all content sections
+            const contentElements = document.getElementsByClassName('content');
+            for (let i = 0; i < contentElements.length; i++) {
+                contentElements[i].style.display = "none";
+                contentElements[i].classList.add('inactive');
+            }
+
+            // Show the selected content
+            const selectedContent = document.getElementById(`content${contentNumber}`);
+            selectedContent.style.display = "block";
+
+
+            }
+        </script>
     
     </body>
 </html>

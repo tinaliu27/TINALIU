@@ -355,9 +355,6 @@ body { overflow-x: hidden; }
 #aboutme .about-me-right .links .github{
     filter: invert(1);
 }
-#aboutme .about-me-right .links .spotify{
-}
-
 #aboutme .about-me-right .about-me-text{ 
     padding: 2px; 
     left: 0; 
@@ -371,26 +368,21 @@ body { overflow-x: hidden; }
     margin: 10px 0; 
 }
 .contact-me-button button{
-    display: block; 
-    font-size: 1.7rem;
-    text-decoration: none; 
-    text-transform: uppercase; 
-    margin-top: 18px; 
-    padding: 15px; 
-    border: 2px solid rgb(186, 143, 247); 
-    box-shadow: 10px 10px 1px 1px white;
-    background-color: transparent; 
-    color: rgb(186, 143, 247);
-    letter-spacing: .3rem;
-    transition: 4s ease transform; 
-    transition: box-shadow 1s ease-out;
-    border-radius: 20%; 
+    font-size: 1.9rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 10px 0;
 }
 
 .contact-me-button button:active{
-    background-color: rgb(186, 143, 247);
-    color: white;
-    box-shadow: 0px 0px 0px 0px rgb(186, 143, 247);
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 /*Projects*/
 #projects {
