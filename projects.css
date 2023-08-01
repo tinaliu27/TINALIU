@@ -17,6 +17,8 @@ html {
 a {
     text-decoration: none; 
 }
+
+
 body { overflow-x: hidden; }
 
 .container {
@@ -38,6 +40,7 @@ body { overflow-x: hidden; }
     display: flex;
     transition: 0.6s; 
     transition: background-color 0.4s ease-in-out;
+    background-color: black; 
 }
 #header.scrolled{
     background: black; 
@@ -117,4 +120,21 @@ body { overflow-x: hidden; }
 
 #header .navlist ul li:hover a{
     color:rgb(48, 48, 194);
+}
+
+#home  {
+    height: auto; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+#home .background{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+
 }
