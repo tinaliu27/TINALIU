@@ -341,13 +341,14 @@ body { overflow-x: hidden; }
 
 }
 #aboutme .about-me .about-me-right .links img{
-    height: 50px; 
-    width: 50px; 
+    height: 40px; 
     object-fit: cover; 
-    margin: 9px; 
-    overflow: hidden;
-
+    margin: 0px 14px; 
     transition: .3s ease transform;
+    max-width: 100%;
+    position: center; 
+    overflow: hidden;
+    vertical-align: middle;
 }
 #aboutme .about-me .about-me-right .links img:hover{
     transform: scale(1.2);
@@ -355,6 +356,7 @@ body { overflow-x: hidden; }
 #aboutme .about-me-right .links .github{
     filter: invert(1);
 }
+
 #aboutme .about-me-right .about-me-text{ 
     padding: 2px; 
     left: 0; 

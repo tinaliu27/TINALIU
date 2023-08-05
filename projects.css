@@ -50,7 +50,6 @@ body { overflow-x: hidden; }
     background-color: transparent;
     min-height: 8vh; 
     transition: 0.6s; 
-    border-bottom: 1px solid lightgray;
     width: 100%; 
 }
 
@@ -137,4 +136,134 @@ body { overflow-x: hidden; }
     height: auto;
     object-fit: cover; 
 
+}
+/*Background*/
+#top{
+    width: 100%; 
+    display: flex; 
+    overflow: hidden; 
+    height: 18vh;
+}
+#top .top{
+    display: flex;
+}
+#top .top .stars{
+    width: 100%;
+}
+#top .stars video{
+    width: 100%; 
+}
+/*Projects*/
+#project{
+    background-color: rgb(18, 5, 21); 
+    height: auto; 
+    width: 100%; 
+    padding-top: 10px;
+}
+.project{
+    display: block; 
+    padding: 60px 200px; 
+    margin-top: -150px;
+    position: relative; 
+}
+.project .header{ 
+    padding-bottom: 50px; 
+    color: rgb(186, 143, 247);
+    font-size: 2rem; 
+    text-transform: uppercase;
+}
+.project .list{
+    display: block; 
+    
+}
+.projects-test{
+    width: 100%; 
+    display: inline-block;
+    min-height: 33vh;
+    padding: 40px 0; 
+    transition: 1s ease transition; 
+}
+.projects-test a{
+    text-decoration: none; 
+    color: white; 
+    
+}
+
+.project .info .button img{
+    height: 4vh; 
+    transform: rotate(90deg); 
+    margin-left: 10px; 
+    transition: 1s ease margin-left; 
+}
+.projects-test:hover{
+    transform: scale(1.05);
+
+}
+.projects-test:hover .info .button img{
+    margin-left: 30px; 
+    filter: drop-shadow(15px 10px 10px orange);
+
+
+}
+.projects-test:hover .info{
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, rgb(48, 151, 180), rgb(145, 22, 145));
+    border-image-slice: 1;
+}
+.projects-test .image{
+    width: 30%; 
+    display: inline-block; 
+    min-height: 33vh;
+    float: left; 
+
+}
+.projects-test .image img{
+    width: 100%; 
+    height: 100%; 
+    min-height: 33vh;
+    position: center; 
+    vertical-align: middle;
+    object-fit: cover; 
+    min-width: 30vh;
+    transition: 2s ease transform; 
+}
+.projects-test .info{
+    width: 70%; 
+    text-size-adjust: auto;
+    background-color: rgb(102,24,214);
+    display: inline-block;
+    min-height: 33vh;
+    padding: 20px 40px; 
+    overflow: hidden; 
+    padding-bottom: 0px;
+    justify-content: center; 
+    align-items: center; 
+}
+.projects-test .info h2 span{
+    color: rgb(186, 143, 247);
+    text-transform: none; 
+
+}
+.projects-test .info h1{
+    font-size: 2rem;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+.projects-test .info h3{
+    font-size: 1.3rem;
+}
+.projects-test .button{
+    display: flex; 
+    padding-top: 8px; 
+    width: fit-content; 
+    margin-top: 10px; 
+}
+.projects-test #pingpong img{
+    justify-content: center; 
+    object-fit: contain; 
+}
+@media only screen and (max-width: 800px) {
+    #project{ 
+        padding-top: 20px; 
+    }
 }
