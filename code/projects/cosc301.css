@@ -1,3 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=PT+Sans+Caption&family=Poppins:wght@300;400&family=Quattrocento&family=Roboto:wght@100;300;400&display=swap');
+* { 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+}
+html {
+    font-size: 15px; 
+    font-family: 'Lusitana', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+
+}
+a {
+    text-decoration: none; 
+}
+
+.container {
+    width: 100%; 
+    display: flex; 
+    align-items: cover; 
+}
+/*Header*/
+#header {
+    display: flex; 
+    position: sticky;
+    background-color: transparent; 
+    left: 0; 
+    top: 0; 
+    z-index: 9999;
+    width: 100%;
+    height: auto;  
+    text-align: center; 
+    display: flex;
+    transition: 0.6s; 
+    transition: background-color 0.4s ease-in-out;
+    background-color: black; 
+}
+#header.scrolled{
+    background: black; 
+}
+
+#header .header {
+    background-color: transparent;
+    min-height: 8vh; 
+    transition: 0.6s; 
+    width: 100%; 
+}
+
+#header .entire-bar{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    height: 100%; 
+    padding: 0 12px;
+}
+#header .entire-bar .upperleft{
+    padding: 2px; 
+    padding-left: 20px;
+    display: flex;
+    justify-content: center; 
+    text-align: center; 
+    align-items: center; 
+}
+#header .entire-bar .logo img{
+    height: 90px;
+    width: 90px; 
+    top: 0; 
+    left: 0; 
+    padding: 2px;
+    margin: 0 auto; 
+}
+#header .bigname h1{
+    top: 0; 
+    right: 0; 
+    width: 100%; 
+    display: flex; 
+    text-transform: uppercase;
+    position: relative; 
+    text-align: left;
+    font-size: 2rem; 
+    color: white;
+    letter-spacing: .4rem; 
+    padding: 10px; 
+}
+
+#header .navlist {
+    padding: 0 27px; 
+    text-align: center; 
+    justify-content: center; 
+}
+#header .navlist ul { 
+    margin: 2px; 
+    font-size: 1.2rem; 
+    letter-spacing: .2rem; 
+    list-style: none; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: right; 
+    align-items: center;
+    text-align: center; 
+}
+#header .navlist ul a{
+    color: rgb(186, 143, 247); 
+    padding: 10px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    text-align: center;
+    margin: .2rem;
+    transition: color 0.4s ease-in-out; 
+}
+
+#header .navlist ul li:hover a{
+    color:rgb(48, 48, 194);
+}
+
+
+#top  {
+    height: 40vh; 
+    width: 100%; 
+    display: flex; 
+    overflow: hidden; 
+}
+#top .top{
+    display: flex;
+}
+.top .background{
+    position: absolute; 
+    width: 100%; 
+    max-height: 40vh;
+    overflow: hidden;
+}
+.top .background video{
+    width: 100%;
+}
+.top .text{
+    margin: 50px 220px;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    padding: 10px; 
+    position: relative;
+
+}
+.text .header{
+    float: left; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 10px;
+}
+.top .header h1{
+    position: relative;
+    color:rgb(186, 143, 247);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.top .text .download{
+    position: relative; 
+    float: right;
+    justify-content: center; 
+    align-items: center; 
+}
+.text .download button{
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.7rem;
+    display: flex; 
+    padding: 7px; 
+    transition: 1s ease transform; 
+    border: 3px solid rgb(186, 143, 247);
+    box-shadow: 10px 3px 0px rgb(186, 143, 247);
+}
+.text .download button:hover{
+    background-color: rgb(186, 143, 247);
+    box-shadow: 0px 0px 0px rgb(186, 143, 247);
+
+}
+/*Top*/
+#top{
+    width: 100%; 
+    max-height: 50vh; 
+    background-image: url(../../Images/cosc301.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+}
+#top-bottom{
+    width: 100%; 
+    height: auto;
+    display: flex; 
+    background-color:rgb(18, 5, 21);
+    overflow: hidden; 
+}
+#top-bottom .top-bottom{
+    margin: 2% 15%; 
+    align-items: center; 
+    justify-content: left; 
+    text-align: left; 
+    display: flex; 
+}
+.top-bottom .text{ 
+    color: white; 
+    display: block; 
+}
+.text h1{
+    font-size: 3.7rem; 
+    text-transform: uppercase;
+    color: rgb(186, 143, 247);
+}
+.text h2{
+    font-size: 1.8rem;
+    padding: 10px 0; 
+    padding-bottom: 15px; 
+}
+.text a .arrow{
+    transition: 1s ease margin-left;
+}
+.text img{
+    filter: invert(1); 
+    display: inline-block; 
+    align-items: center; 
+    height: 4vh; 
+}
+.text a:hover .arrow{
+    margin-left: 10px; 
+}
+
+/*Research*/
+#info{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    display: flex; 
+}
+#info .info{
+    justify-content: center; 
+    padding: 30px; 
+    overflow: hidden;
+    display: flex; 
+    width: 70%; 
+}
+.info .texts{
+    margin: 3% 15%; 
+    display: block;
+    justify-content: center; 
+    overflow: hidden;
+    text-align: center; 
+}
+.texts .item h1{
+    font-size: 2em;
+    padding: 10px 0; 
+    text-align: left; 
+}
+.texts .item h2{
+    padding: 20px 0; 
+    line-height: 1.7em;
+    color: rgb(58, 58, 58);
+    text-align: left; 
+}
+.info .item{
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center; 
+}
+.item img{
+    text-align: center; 
+}
+#tools .images{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center; 
+}
+#tools img{
+    height: 10vh; 
+    margin: 0 2%; 
+    display: inline-block;
+    justify-content: center; 
+    align-items: center;
+}
+.info .researchquestion{
+    margin: 0 15%;
+    padding: 20px; 
+    border-left: 8px solid black;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: fit-content;
+}
+.item .graph2{
+    width: 90%; 
+}
+.item .graph3{
+    width: 90%; 
+}
+.item ul{
+    padding: 20px 0; 
+
+}
+.item li{
+    text-align: left; 
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+.back{
+    text-align: center;
+}
+.back a{
+    transition: 1s ease margin-right;
+}
+.back h1{
+    color: black;
+}
+.back a:hover{
+    margin-right: 20px;
+}
 /*Mobile*/
 @media (max-width: 480px) {
 

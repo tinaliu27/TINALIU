@@ -5,7 +5,7 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content="width=device-width", initial-scale="1.0">
         <title>Tina Liu Portfolio</title>
-        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="cosc301.css">
         
     </head>
     <body>
@@ -16,7 +16,7 @@
                     <div class="upperleft">
                         <div class="logo">
                             <a href="#home">
-                                <img src = "../Images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG">
+                                <img src = "../../Images/4058ED2F-0192-42D7-A5CC-447BEC75A315.PNG">
                             </a>
                         </div>
                         <div class = "bigname">
@@ -27,19 +27,94 @@
                         <div class="hamburger"><div class="bar"></div></div>
                         <div class="full">
                         <ul>
-                            <li><a href = "index.html" data-after= "home">Home</a></li>
-                            <li><a href = "#" data-after="OverviewProjects">Projects</a></li>
-                            <li><a href = "experience.html" data-after="Experiences">Experiences</a></li>
-                            <li><a href = "contact-me.html" data-after = "ContactMe">Contact Me</a></li>
+                            <li><a href = "../../index.html" data-after= "home">Home</a></li>
+                            <li><a href = "../../projects.html" data-after="OverviewProjects">Projects</a></li>
+                            <li><a href = "../../experience.html" data-after="Experiences">Experiences</a></li>
+                            <li><a href = "../../contact-me.html" data-after = "ContactMe">Contact Me</a></li>
                         </ul> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="trying">
-            <img src = "../../Images/vimeo.png">
-        </div>
-        </body>
+        <section id="top"> </section>
+        <section id="top-bottom">
+            <div class="top-bottom container">
+                <div class="text">
+                        <h1>The Socioeconomic bias of not-so-standarized testing</h1>
+                        <h2>By Tina Liu, Peter Idoko, and Noah Stasuik</h2>
+                        <a href="https://github.com/ubco-W2022T1-cosc301/project-group01">
+                            <img src="../../Images/github.png" class="github">
+                            <img src="../../Images/arrow_outward_FILL0_wght400_GRAD0_opsz48.png" class="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info container">
+                <div class="texts">
+                    <div class="item">
+                        <h1>Overview</h1>
+                        <h2>In this project, Tina, Noah, and Peter each explored a dataset called <i>Student Performance in Exams</i>. Each of us explored different socioeconomic factors which may or may not impact student performance on standarized tests. As students studying at UBC- a university with many international students-
+                        we wanted to emphasize and acknowledge that different socio-economical backgrounds are important factors to consider when it comes to college admissions. Ultimately, based on our findings, we criticized the legitamcy behind standarized tests. </h2>
+                    </div>
+                    <div class="item" id="tools">
+                        <h1>Tools</h1>
+                        <div class="images">
+                            <img src="../../Images/python.png">
+                            <img src="../../Images/matlab.png">
+                            <img src="../../Images/numpy.png">
+                            <img src="../../Images/pandas.png">
+                            <img src="../../Images/tableau.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Objective</h1>
+                        <h2>In my analysis, I investigated whether or not one sex performs better on standardized exams than the other. I simplified the data to only use the following columns: "gender", "writing scores","reading scores", and "math scores".
+                            With these columns, I dropped any NA values and only worked with scores in the range [0,100]. With these changes, I used barplots, violin plots, and compound plots to visualize my data.
+                        </h2>
+                        <h2> With these values and columns I hope to answer the following research question: 
+                        </h2>
+                        <div class="researchquestion">
+                            <h3>Does one sex perform better on standarized exams than the other?</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>Research</h1>
+                        <h2>Before doing any analysis at all, I hypothesized that females perform better than males in standardized tests. As a female university student, I was interested to see if one sex does better on standardized tests because I have always been told that “guys are smarter than girls”. In efforts to debunk this myth and see if females do better on certain subjects, I explore my research questions through 3 visualizations. These research interests are important to explore because females often struggle with expressing their intelligence and expertise. Therefore, I hope my data analysis helps females feel empowered to express their intelligience. </h2>
+                        <h2>To start off, I check if my data analysis is valid or not by checking the number of males and females in the “gender” column.</h2>
+                        <img src="../../Images/Analysis2_Image3.png" class="graph1">
+                        <h3>*<i>By having relatively equal sample sizes for each gender, it increases statistical power and validates the data set more. I was able to move on with my data analysis since I was confident with the given data.</i></h3>
+                        <h2>After that, I wanted to compare the averages of each subject ("math", "reading", and "writing") to each sex to understand which sex does better in what subject using 4 violin plots. </h2>
+                        <img src="../../Images/Analysis2_Image1.png" class="graph2">
+                        <h3>*<i>Based on the visualization above, I found out that females do better in writing and reading, and males do better in math. When comparing the total score average of all 3 subjects, females did 2.36% better.</i></h3>
+                        <img src="../../Images/Analysis2_Image2.png" class="graph3">
+                        <h3>*<i>Based on the visualization above, more females seem to be getting scores closer to 100% in comparison to males. The only outlier would be in math. Math is the only subject where more females are getting scores less than 20%.</i></h3>
+                        <h2> Looking at the mean scores of each gender in EWR, females tend to perform better by about 5% (531 vs 526 respectively). This supports my analysis because in this data set, females perform better in reading and writing in comparison to me. In math, males perform better by about 18%. This supports my findings because math is the only subject where males do better. Further analysis should be done to understand why females only perform better in reading and writing. However, looking at the total mean score of each gender, males score 13 points higher. This was interesting data to find because it opposes my conclusions from our data set. Additionally, it was interesting to see that individuals who didn't response or put "another" gender received the highest mark amongst the 3 given genders. Ultimately, my juxtaposing conclusions shows the dangers in stereotyping either sex and can't fully support my original conclusion that females tend to do better on standardized tests than males.</h2>
+                    </div>
+                    <div class="item">
+                        <h1>Conclusion</h1>
+                        <h2>After conducting individual analysis on the effects of parental level of education, gender, and race, we all came to the conclusion that there are many socio-economic factors that impact student performance on standardized tests. In fact, our findings highlight how unconventional standardized tests, and schools should not use them as a way to measure intelligence.</h2>
+                    </div>
+                    <div class="item">
+                        <h1>Links</h1>
+                        <ul>
+                            <li><a href="https://reports.collegeboard.org/media/pdf/2022-total-group-sat-suite-of-assessments-annual-report.pdf">SAT Annual Report for 2022</a></li>
+                            <li><a href="https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams?resource=download">Students Performance in Exams Dataset</a></li>
 
-        </html>
+                        </ul>
+                    </div>
+                    <div class="back">
+                        <a href="../../projects.html">
+                            <h1>Back</h1>
+                            <img src="../../Images/arrow_back_FILL0_wght400_GRAD0_opsz48 (1).png">
+                        </a>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        
+    </body>
+</html>
