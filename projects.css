@@ -236,7 +236,7 @@ body { overflow-x: hidden; }
     padding: 20px 40px; 
     overflow: hidden; 
     padding-bottom: 0px;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
 }
 .projects-test .info h2 span{

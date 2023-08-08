@@ -12,7 +12,6 @@ html {
     font-family: 'Quattrocento', serif;
     font-family: 'Roboto', sans-serif;
     color: black; 
-
 }
 a {
     text-decoration: none; 
@@ -116,4 +115,183 @@ a {
 
 #header .navlist ul li:hover a{
     color:rgb(48, 48, 194);
+}
+/*Top*/
+#top{
+    width: 100%; 
+    max-height: 50vh; 
+    background-color: black;
+    background-image: url("../../Images/Screen\ Shot\ 2023-08-05\ at\ 1.02.00\ AM.png");
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    height: 40vh; 
+    width: 100%; 
+    display: flex; 
+    overflow: hidden; 
+}
+
+/*Top Bottom*/
+#top-bottom{
+    width: 100%; 
+    height: auto;
+    display: flex; 
+    background-color:rgb(18, 5, 21);
+    overflow: hidden; 
+}
+#top-bottom .top-bottom{
+    margin: 2% 15%; 
+    align-items: center; 
+    justify-content: left; 
+    text-align: left; 
+    display: flex; 
+}
+.top-bottom .text{ 
+    color: white; 
+    display: block; 
+}
+.text h1{
+    font-size: 3.7rem; 
+    text-transform: uppercase;
+    color: rgb(186, 143, 247);
+}
+.text h2{
+    font-size: 1.8rem;
+    padding: 10px 0; 
+    padding-bottom: 15px; 
+}
+.text a .arrow{
+    transition: 1s ease margin-left;
+}
+.text img{
+    filter: invert(1); 
+    display: inline-block; 
+    align-items: center; 
+    height: 4vh; 
+}
+.text a:hover .arrow{
+    margin-left: 10px; 
+}
+
+/*Research*/
+#info{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    display: flex; 
+}
+#info .info{
+    justify-content: center; 
+    padding: 30px; 
+    overflow: hidden;
+    display: flex; 
+    width: 70%; 
+}
+.info .texts{
+    margin: 3% 15%; 
+    display: block;
+    justify-content: center; 
+    overflow: hidden;
+    text-align: center; 
+}
+.texts .item h1{
+    font-size: 2em;
+    padding: 10px 0; 
+    text-align: left; 
+}
+.texts .item h2{
+    padding: 20px 0; 
+    line-height: 1.7em;
+    color: rgb(58, 58, 58);
+    text-align: left; 
+}
+.info .item{
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center; 
+}
+.item img{
+    text-align: center; 
+}
+#tools .images{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center; 
+}
+#tools img{
+    height: 10vh; 
+    margin: 2% 6%; 
+    display: inline-block;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px; 
+}
+.info .researchquestion{
+    margin: 0 15%;
+    padding: 20px; 
+    border-left: 8px solid black;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: fit-content;
+    margin-bottom: 20px; 
+}
+.info .researchquestion h3{
+    text-align: left; 
+}
+.item .graph2{
+    width: 90%; 
+}
+.item .graph3{
+    width: 90%; 
+}
+.item ul{
+    padding: 20px 0; 
+
+}
+.item li{
+    text-align: left; 
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+.back{
+    text-align: center;
+}
+.back a{
+    transition: 1s ease margin-right;
+}
+.back h1{
+    color: black;
+}
+.back a:hover{
+    margin-right: 20px;
+}
+/*Mobile*/
+@media (max-width: 480px) {
+
+}
+/*Extra small devices */
+@media (max-width: 480px) {
+
+}
+/*small tablets */
+@media (max-width: 480px) {
+
+}
+/*large tablets/laptop*/
+@media (max-width: 480px) {
+
+}
+/*desktops*/
+@media (max-width: 480px) {
+
+}
+/*extra large screens*/
+@media (max-width: 480px) {
+
 }
