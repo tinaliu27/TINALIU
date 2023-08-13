@@ -452,8 +452,8 @@ body { overflow-x: hidden; }
     width: 100%; 
 }
 #projects .projects{
-    margin: 10px; 
-    padding: 10px; 
+    margin: 1%; 
+    padding: 1%; 
     display: inline-block; 
     text-align: left;
     flex-direction: column;
@@ -488,7 +488,7 @@ body { overflow-x: hidden; }
     text-align: left; 
     left: 0; 
     overflow: hidden; 
-    margin: 0 10px; 
+    margin: 0 1%; 
 }
 .projects .featured-projects .fullproject{
     width: 35%; 
