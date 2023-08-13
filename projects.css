@@ -220,25 +220,24 @@ body { overflow-x: hidden; }
 }
 .project{
     display: block; 
-    padding: 60px 200px; 
+    padding: 6% 20%; 
     margin-top: -150px;
     position: relative; 
 }
 .project .header{ 
-    padding-bottom: 50px; 
+    padding-bottom: 5px; 
     color: rgb(186, 143, 247);
     font-size: 2rem; 
     text-transform: uppercase;
 }
 .project .list{
     display: block; 
-    
 }
 .projects-test{
     width: 100%; 
     display: inline-block;
     min-height: 33vh;
-    padding: 40px 0; 
+    padding: 4% 0%; 
     transition: 1s ease transition; 
 }
 .projects-test a{
