@@ -94,8 +94,8 @@ a {
 }
 #header .navlist ul { 
     margin: 2px; 
-    font-size: 1.2rem; 
-    letter-spacing: .2rem; 
+    font-size: 1.2em; 
+    letter-spacing: .2em; 
     list-style: none; 
     display: flex; 
     flex-direction: row; 
@@ -241,9 +241,48 @@ a {
     align-items: center;
     margin: 20px; 
 }
-
 .item .graph1{
     width: 80%; 
+}
+.item .color-palette{
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid black;
+}
+.color-palette .color1{
+    background-color: black;
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    width: 60%; 
+    height: 10vh; 
+}
+.color-palette .color2{
+    width: 30%; 
+    height: 10vh; 
+    background-color: white;
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+}
+.color-palette .color3{
+    width: 10%; 
+    height: 10vh; 
+    background-color: rgb(186, 143, 247);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+}
+.color-palette .color4{
+    width: 10%; 
+    height: 10vh; 
+    background-color: rgb(18, 5, 21);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
 }
 .item ul{
     padding: 20px 0; 
