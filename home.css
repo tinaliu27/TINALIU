@@ -265,7 +265,7 @@ body { overflow-x: hidden; }
 }
 #home .introduction a button:hover{
     transition: .4s ease; 
-    color:black;
+    color:rgb(39, 38, 38);
     background-color: white;  
 }
 #home .profile-photo { 
@@ -498,21 +498,49 @@ body { overflow-x: hidden; }
     box-shadow: 0px 0px 10px 2px purple; 
     overflow: hidden; 
     margin: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }          
 .projects .featured-projects .fullproject .header{ 
     margin: 0 auto; 
 }
-.projects .featured-projects .fullproject .header img{ 
-    max-width: 100%;
+.projects .featured-projects .fullproject .header1{ 
+    background-image: url(Images/cosc301.jpeg);
+    background-size: cover; 
+    width: 100%; 
     position: center; 
+    max-height: 80vh; 
+    height: 30vh; 
+    object-fit: contain; 
+    display: flex; 
     overflow: hidden;
-    vertical-align: middle;
-    object-fit: cover; 
-    width: 500px; 
-    height: 250px; 
-    transition: transform 1s ease-in;
-
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.projects .featured-projects .fullproject .header2{
+    background-image: url(Images/personalportfolio.png);
+    background-size: cover; 
+    width: 100%; 
+    position: center; 
+    max-height: 80vh; 
+    height: 30vh; 
+    object-fit: contain; 
+    display: flex; 
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.projects .featured-projects .fullproject .header3{
+    background-image: url(Images/Screen\ Shot\ 2023-07-28\ at\ 3.27.57\ AM.png);
+    background-size: cover; 
+    width: 100%; 
+    position: center; 
+    max-height: 80vh; 
+    height: 30vh; 
+    object-fit: contain; 
+    display: flex; 
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 .featured-projects .fullproject .header img:hover{ 
     transform: scale(1.1);
@@ -776,5 +804,12 @@ body { overflow-x: hidden; }
         position: relative; 
         padding: 2px; 
         display: flex; 
+    }
+    .projects .featured-projects{
+        display: block; 
+    }
+    .projects .featured-projects .fullproject{ 
+        width: 95%; 
+        display: block; 
     }
 }

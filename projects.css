@@ -243,7 +243,7 @@ body { overflow-x: hidden; }
 .projects-test a{
     text-decoration: none; 
     color: white; 
-    
+    display: flex; 
 }
 
 .project .info .button img{
@@ -267,23 +267,51 @@ body { overflow-x: hidden; }
     border-image: linear-gradient(to right, rgb(48, 151, 180), rgb(145, 22, 145));
     border-image-slice: 1;
 }
-.projects-test .image{
-    width: 30%; 
-    display: inline-block; 
+.projects-test .image1{
+    background-image: url(Images/cosc301.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    width: 29%; 
+    display: flex; 
+    overflow: hidden;
     min-height: 33vh;
-    float: left; 
-
-}
-.projects-test .image img{
-    width: 100%; 
-    height: 100%; 
-    min-height: 33vh;
-    position: center; 
-    vertical-align: middle;
-    object-fit: cover; 
-    min-width: 30vh;
     transition: 2s ease transform; 
 }
+.projects-test .image2{
+    background-image: url(Images/personalportfolio.png);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    width: 29%; 
+    display: flex; 
+    overflow: hidden;
+    min-height: 33vh;
+    transition: 2s ease transform; 
+}
+.projects-test .image3{
+    background-image: url(Images/Screen\ Shot\ 2023-07-28\ at\ 3.27.57\ AM.png);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    width: 29%; 
+    display: flex; 
+    overflow: hidden;
+    min-height: 33vh;
+    transition: 2s ease transform; 
+}
+.projects-test .image4{
+    background-image: url(Images/Screen\ Shot\ 2023-08-05\ at\ 1.02.00\ AM.png);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    width: 29%; 
+    display: flex; 
+    overflow: hidden;
+    min-height: 33vh;
+    transition: 2s ease transform; 
+}
+
 .projects-test .info{
     width: 70%; 
     text-size-adjust: auto;
@@ -354,9 +382,13 @@ body { overflow-x: hidden; }
  #header .navlist ul li:hover a{
      color:rgb(48, 48, 194);
  }
+ 
 }
 @media only screen and (max-width: 800px) {
     #project{ 
         padding-top: 20px; 
     }
+}
+@media only screen and (max-width: 1000px) {
+    
 }
