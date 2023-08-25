@@ -230,6 +230,7 @@ body { overflow-x: hidden; }
     align-items: center; 
     justify-content: center;
     margin: 10px;
+    float: left; 
 }
 #home .introduction h1{
     padding: 2.4px; 
@@ -277,7 +278,7 @@ body { overflow-x: hidden; }
     justify-content: center;
 }
 #home .profile-photo img{
-    height: 350px; 
+    height: 60vw; 
     border-radius: 50%;
     transition: 1s ease transform; 
 }
@@ -375,7 +376,7 @@ body { overflow-x: hidden; }
 #aboutme .about-me .about-me-right{
     position: relative;
     padding: 5px; 
-     display: block; 
+    display: block; 
     text-align: left; 
     color: white; 
     width: 100%; 
@@ -467,7 +468,7 @@ body { overflow-x: hidden; }
     text-align: left;
 }
 .projects .topic{
-    margin: 0 40px; 
+    margin: 0 4%; 
 }
 .projects .topic h2{
     display: inline-block;
@@ -497,7 +498,7 @@ body { overflow-x: hidden; }
     border-radius: 20px; 
     box-shadow: 0px 0px 10px 2px purple; 
     overflow: hidden; 
-    margin: 20px;
+    margin: 2%;
     background-color: rgb(0, 0, 0);
 }          
 .projects .featured-projects .fullproject .header{ 
@@ -510,7 +511,7 @@ body { overflow-x: hidden; }
     position: center; 
     max-height: 80vh; 
     height: 30vh; 
-    object-fit: contain; 
+    object-fit11: contain; 
     display: flex; 
     overflow: hidden;
     background-repeat: no-repeat; 
@@ -576,14 +577,14 @@ body { overflow-x: hidden; }
 
 }
 .featured-projects .fullproject .description h2{ 
-    font-size: 1.5rem;
-    margin: 10px 0; 
+    font-size: 1.5em;
+    margin: 1% 0; 
     color: white; 
     line-height: 2rem;
     letter-spacing: 0.01em;
 }
 .description h4{
-    padding: 20px 0; 
+    padding: 2% 0; 
     font-size: 1.3rem; 
 }
 .bottom .description img{
@@ -600,7 +601,7 @@ body { overflow-x: hidden; }
 .bottom .go{
     width: fit-content; 
     bottom: 0; 
-    margin-top: 10px;
+    margin-top: 1%;
     margin-bottom: -20px; 
     background-color: transparent; 
     text-decoration: none; 
@@ -770,6 +771,7 @@ body { overflow-x: hidden; }
     #home .home{
         margin: 100px 0; 
     }
+
 }
 @media only screen and (max-width: 1200px) {
     #aboutme .about-me .about-me-left{
@@ -811,5 +813,59 @@ body { overflow-x: hidden; }
     .projects .featured-projects .fullproject{ 
         width: 95%; 
         display: block; 
+    }
+}
+@media only screen and (max-width: 450px) {
+    #aboutme{
+        display: block; 
+    }
+    .about-me{
+        display: block; 
+    }
+    .about-me .about-me-left{ 
+        display: flex; 
+    }
+    .about-me .about-me-right{
+        display: flex; 
+    }
+    #home .introduction h1{
+        font-size: 3.6em; 
+    }
+    #home .introduction h2{
+        font-size: 1.4em; 
+    }
+    #home .introduction a button{
+        align-items: center; 
+        margin: 0 auto; 
+        margin-top: 10px; 
+    }
+
+}
+@media only screen and (max-width: 850px) {
+   #home{
+    display: flex;
+   }
+   #home .home{
+    display: block;
+    border: 2px solid white;
+    text-align: center; 
+    align-items: center;
+    width: fit-content; 
+    height: auto;
+    margin: 0px; 
+   }
+    #home .introduction{
+        display: block; 
+        margin-bottom: 10%; 
+    }
+    #home .introduction a{
+        text-align: center; 
+        align-items: center; 
+        display: flex; 
+        margin-bottom: 2%; 
+    }
+    #home .profile-photo{
+        display: block;
+        bottom: 0; 
     }
 }
