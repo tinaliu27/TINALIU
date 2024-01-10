@@ -1,28 +1,31 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let currentPhotoIndex = 0;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function showPhoto(index) {
+    const photos = document.getElementsByClassName('photo');
+
+    if (index >= photos.length) {
+        currentPhotoIndex = 0;
+    } else if (index < 0) {
+        currentPhotoIndex = photos.length - 1;
+    } else {
+        currentPhotoIndex = index;
+    }
+
+    for (let i = 0; i < photos.length; i++) {
+        photos[i].style.display = 'none';
+    }
+
+    photos[currentPhotoIndex].style.display = 'block';
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function changePhoto(n) {
+    showPhoto(currentPhotoIndex += n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("myImages");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function autoChange() {
+    changePhoto(1);
 }
+
+setInterval(autoChange, 10000);
+
+showPhoto(currentPhotoIndex);

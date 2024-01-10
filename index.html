@@ -39,22 +39,26 @@
         <section id = "home">
             <div class="home container">     
                     <div class="background">
-                        <video autoplay loop muted plays-inline class="background-video">
+                        <video autoplay loop muted playsinline class="background-video">
                             <source src="Images/shortstar.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="profile-photo">
-                        <a href = "#aboutme">
-                            <img src ="Images/profilephoto.png">
-                        </a>
+                    <div class="item">
+                        <div class="profile-photo">
+                            <a href = "#aboutme">
+                                <img src ="Images/profilephoto.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="introduction">
-                        <h2>Hey,</h2>
-                        <h1>I'm <span>Tina Liu</span>!</h1>
-                   
-                        <a href="Images/Tianai_Liu_Resume.pdf" download="Tianai_Liu_Resume.pdf">
-                            <button>Download My Resume</button>
-                        </a>
+                    <div class="item">
+                        <div class="introduction">
+                            <h2>Hey,</h2>
+                            <h1>I'm <span>Tina Liu</span>!</h1>
+                    
+                            <a href="Images/Tianai_Liu_Resume.pdf" download="Tianai_Liu_Resume.pdf">
+                                <button>Download My Resume</button>
+                            </a>
+                        </div>
                     </div>
                 
             </div>
@@ -63,22 +67,24 @@
         <section id = "aboutme">
             <div class="about-me container">
                 <div class="about-me-left">     
-                   <div class="imageslider">
-                        <div class="images">
+                   <div class="imageslider" id="photo-album">
+                        <div class="photo fade">
                             <img id="slide-1" src="Images/profilephoto.png">
+                        </div>
+                        <div class="photo fade">
                             <img id="slide-2" src="Images/thumbsup.png">
+                        </div>
+                        <div class="photo fade">
                             <img id="slide-3" src="Images/golf.jpg">
+                        </div>
+                        <div class="photo fade">
                             <img id="slide-4" src="Images/tennis.jpg">
                         </div>
-                        <div class="slider">
-                            <a href="#slide-1" class="button"></a>
-                            <a href="#slide-2" class="button"></a>
-                            <a href="#slide-3" class="button"></a>
-                            <a href="#slide-4" class="button"></a>
-                        </div>
+                    </div>
+                    <a class="prev" onclick="changePhoto(-1)">&#10094;</a>
+                    <a class="next" onclick="changePhoto(1)">&#10095;</a>
                    </div>      
-                </div>
-
+                
                 <div class="about-me-right">
                     <div class="about-me-intro">
                         <h1>About Me</h1>
@@ -217,12 +223,16 @@
 
             document.addEventListener('scroll', () => {
             const header = document.querySelector('#header'); 
-                if(window.scrollY > 0) {
-                    header.classList.add('scrolled'); 
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            })
+            let lastKnownScrollY = window.scrollY;
+            let ticking = false;
+             if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+             } else {
+            header.classList.remove('scrolled');
+             }
+             })
+
+
             const text = ["example 1", "example 2", "example 3", "example 4"];
             let counter = 0;
             setInterval(change, 5000);
