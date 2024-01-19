@@ -140,12 +140,12 @@ a {
     top: 0; 
 }
 #header .navlist ul{
-    list-style: none; 
+    list-style: none;
     position: absolute;
     background-color: black; 
-    opacity: 1;
-    width: fit-content; 
-    height: 80vh; 
+    opacity: 1; 
+    width: 50vw; 
+    height: 100vh; 
     right: 100%;
     top: 0; 
     display: flex;
@@ -153,8 +153,13 @@ a {
     justify-content: center; 
     align-items: center; 
     z-index: 1; 
-    overflow-x: hidden; 
     transition: .5s ease left;
+}
+#header .navlist li{
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: right;
+    display: flex;
 }
 #header .navlist ul.active{
     right: 0%; 
@@ -225,10 +230,10 @@ a {
 .text .download button{
     justify-content: center;
     align-items: center; 
-    font-size: 1.7em;
+    font-size: 2vw;
     display: flex; 
     padding: 7px; 
-    transition: 1s ease transform; 
+    transition: 4s ease transform; 
     border: 3px solid rgb(186, 143, 247);
     box-shadow: 10px 3px 0px rgb(186, 143, 247);
 }
@@ -259,21 +264,22 @@ a {
     display: inline-block;
     width: 100%; 
     align-items: center; 
-    max-height: 35vh; 
+    min-height: 35vh; 
     flex-direction: column;
     justify-content: center;
-    padding-left:0px; 
     text-align: left; 
+    margin: 0 auto;
+    padding: 0 auto;
 }
 .resume .resume-top .elements{
     position: relative; 
     display: flex; 
     justify-content: space-between;
-    max-height: 35vh; 
+    max-height: 30vh; 
     text-align: left; 
     width: 100%; 
 }
-.resume-top .left{
+.resume-top .elements .left{
     width: 26%;
     max-height:35vh;
     background-image: url("Images/profilephoto.png");
@@ -286,7 +292,6 @@ a {
 }
 
 .resume-top .right{
-    flex-direction:row; 
     display: inline-block; 
     width: 71%;
     justify-content: center; 
@@ -308,30 +313,27 @@ a {
     height: auto;
     margin-left: 5%;
 }
-.resume-top .header h1{
+.resume-top .right h1{
     font-size: 2.7vw;
     padding-bottom: 10px; 
     text-transform: uppercase;
 }
-.resume-top .header h2{
-    font-size: 2.4vw; 
+.resume-top .elements .right p{
+    font-size: 1.5vw; 
 }
 .resume-top .links{
-    display: inline-block;
-    width: auto;
-    position:relative; 
-    margin: 1% 2%;
+    display: flex;
+    
 }
 .resume-top .links a{ 
-    display: block; 
+    display: flex; 
     padding: 2.5% 1%;
     align-items: center;
-    justify-content: flex-start; 
     overflow: hidden;
 
 }
 .resume-top .links img{
-    height: 3vw;
+    height: 2.7vw;
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -385,8 +387,6 @@ a {
 }
 .resume .resume-bottom .left{
     display: inline-block; 
-    max-width: 70%; 
-    min-width: 60%; 
     position: relative; 
     justify-content: flex-start; 
     overflow: hidden;
@@ -413,7 +413,6 @@ a {
     padding: 0 50px;
     padding-bottom: 0px; 
     padding-left: 0px;
-    text-transform: uppercase;
 }
 .resume-bottom .left button:hover{
     color: rgb(186, 143, 247);
@@ -526,7 +525,7 @@ a {
 }
 
 
-/*Right side of resume*/
+/*Right side of resume
 .resume-bottom .right {
     width: 25%; 
     justify-content: flex-end; 
@@ -581,6 +580,7 @@ a {
     margin-top: 5px; 
     line-height: 1.5em;
 }
+*/
 @media only screen and (min-width: 1200px) {
      /*Text in line for header */ 
   #header .hamburger{
@@ -616,9 +616,7 @@ a {
 #header .navlist ul li:hover a{
     color:rgb(48, 48, 194);
 }
-.resume .resume-bottom .left{
-     width: 70%;
-}
+
 }
 @media only screen and (max-width: 480px) {
     .resume .resume-top{

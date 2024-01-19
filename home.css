@@ -125,7 +125,7 @@ body { overflow-x: hidden; }
     transition-property: top, bottom; 
 }
 #header .hamburger .bar::after{
-    width: 35px; 
+    width: 30px; 
     top: 8px; 
 }
 #header .hamburger .bar::before{
@@ -138,13 +138,14 @@ body { overflow-x: hidden; }
 #header .hamburger.active .bar::after{
     top: 0; 
 }
+
 #header .navlist ul{
-    list-style: none; 
+    list-style: none;
     position: absolute;
     background-color: black; 
-    opacity: 1;
-    width: fit-content; 
-    height: 80vh; 
+    opacity: 1; 
+    width: 50vw; 
+    height: 100vh; 
     right: 100%;
     top: 0; 
     display: flex;
@@ -152,9 +153,16 @@ body { overflow-x: hidden; }
     justify-content: center; 
     align-items: center; 
     z-index: 1; 
-    overflow-x: hidden; 
     transition: .5s ease left;
 }
+#header .navlist li{
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: right;
+    display: flex;
+}
+
+
 #header .navlist ul.active{
     right: 0%; 
 }
@@ -537,7 +545,7 @@ body { overflow-x: hidden; }
     background-position: center;
 }
 .projects .featured-projects .fullproject .header2{
-    background-image: url(Images/personalportfolio.png);
+    background-image: url(Images/rock.png);
     background-size: cover; 
     width: 100%; 
     position: center; 
@@ -550,7 +558,7 @@ body { overflow-x: hidden; }
     background-position: center;
 }
 .projects .featured-projects .fullproject .header3{
-    background-image: url(Images/Screen\ Shot\ 2023-07-28\ at\ 3.27.57\ AM.png);
+    background-image: url(Images/2fresh2waste.png);
     background-size: cover; 
     width: 100%; 
     position: center; 

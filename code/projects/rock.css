@@ -181,210 +181,176 @@ a {
     color:rgb(48, 48, 194);
 }
 
-
-
-#home  {
-    height: auto; 
-    width: 100%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-#home .background{
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: auto;
-    object-fit: cover; 
-
-}
-/*Background*/
+/*Top*/
 #top{
     width: 100%; 
+    max-height: 50vh; 
+    background-image: url(../../Images/rock.png);
+    background-size: cover; 
+    background-position: center; 
+    object-fit: contain; 
+    height: 40vh; 
+    width: 100%; 
     display: flex; 
     overflow: hidden; 
-    height: 18vh;
 }
-#top .top{
-    display: flex;
-}
-#top .top .stars{
-    width: 100%;
-}
-#top .stars video{
+/*Top Bottom*/
+#top-bottom{
     width: 100%; 
+    height: auto;
+    display: flex; 
+    background-color:rgb(18, 5, 21);
+    overflow: hidden; 
 }
-/*Projects*/
-#project{
-    background-color: rgb(18, 5, 21); 
-    height: auto; 
-    width: 100%; 
-    padding-top: 10px;
+#top-bottom .top-bottom{
+    margin: 2% 15%; 
+    align-items: center; 
+    justify-content: left; 
+    text-align: left; 
+    display: flex; 
 }
-.project{
-    display: block; 
-    padding: 6% 20%; 
-    margin-top: -150px;
-    position: relative; 
-}
-.project .header{ 
-    padding-bottom: 5px; 
-    color: rgb(186, 143, 247);
-    font-size: 2rem; 
-    text-transform: uppercase;
-}
-.project .list{
-    display: block; 
-}
-.projects-test{
-    width: 100%; 
-    display: inline-block;
-    min-height: 33vh;
-    padding: 4% 0%; 
-    transition: 1s ease transition; 
-}
-.projects-test a{
-    text-decoration: none; 
+.top-bottom .text{ 
     color: white; 
-    display: flex; 
+    display: block; 
 }
-
-.project .info .button img{
+.text h1{
+    font-size: 3.7rem; 
+    text-transform: uppercase;
+    color: rgb(186, 143, 247);
+}
+.text h2{
+    font-size: 1.8rem;
+    padding: 10px 0; 
+    padding-bottom: 15px; 
+}
+.text a .arrow{
+    transition: 1s ease margin-left;
+}
+.text img{
+    filter: invert(1); 
+    display: inline-block; 
+    align-items: center; 
     height: 4vh; 
-    transform: rotate(90deg); 
+}
+.text a:hover .arrow{
     margin-left: 10px; 
-    transition: 1s ease margin-left; 
-}
-.projects-test:hover{
-    transform: scale(1.05);
-
-}
-.projects-test:hover .info .button img{
-    margin-left: 30px; 
-    filter: drop-shadow(15px 10px 10px orange);
-
-
-}
-.projects-test:hover .info{
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, rgb(48, 151, 180), rgb(145, 22, 145));
-    border-image-slice: 1;
-}
-.projects-test .image1{
-    background-image: url(Images/cosc301.jpeg);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image2{
-    background-image: url(Images/personalportfolio.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image3{
-    background-image: url(Images/Screen\ Shot\ 2023-07-28\ at\ 3.27.57\ AM.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image4{
-    background-image: url(Images/Screen\ Shot\ 2023-08-05\ at\ 1.02.00\ AM.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image5{
-    background-image: url(Images/rock.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image6{
-    background-image: url(Images/2fresh2waste.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
-}
-.projects-test .image7{
-    background-image: url(Images/proposal.png);
-    background-size: cover; 
-    background-position: center; 
-    object-fit: contain; 
-    width: 29%; 
-    display: flex; 
-    overflow: hidden;
-    min-height: 33vh;
-    transition: 2s ease transform; 
 }
 
-.projects-test .info{
-    width: 70%; 
-    text-size-adjust: auto;
-    background-color: rgb(102,24,214);
-    display: inline-block;
-    min-height: 33vh;
-    padding: 20px 40px; 
+/*Research*/
+#info{
+    width: 100%; 
+    height: auto; 
     overflow: hidden; 
-    padding-bottom: 0px;
+    display: flex; 
+}
+#info .info{
+    justify-content: center; 
+    padding: 30px; 
+    overflow: hidden;
+    display: flex; 
+    width: 70%; 
+}
+.info .texts{
+    margin: 3% 15%; 
+    display: block;
+    justify-content: center; 
+    overflow: hidden;
+    text-align: center; 
+}
+.texts .item h1{
+    font-size: 2em;
+    padding: 10px 0; 
+    text-align: left; 
+}
+.texts .item h2{
+    padding: 20px 0; 
+    line-height: 1.7em;
+    color: rgb(58, 58, 58);
+    text-align: left; 
+}
+.info .item{
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    text-align: center; 
+}
+.item img{
+    text-align: center; 
+}
+#tools .images{
+    display: inline-block;
     justify-content: space-between; 
     align-items: center; 
+    width: 100%; 
+    text-align: center; 
 }
-.projects-test .info h2 span{
-    color: rgb(186, 143, 247);
-    text-transform: none; 
+#tools img{
+    height: 10vh; 
+    margin: 0 2%; 
+    display: inline-block;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px; 
+}
+.info .researchquestion{
+    margin: 0 15%;
+    padding: 20px; 
+    border-left: 8px solid black;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: fit-content;
+    margin-bottom: 20px; 
+}
+.info .researchquestion h3{
+    text-align: left; 
+}
+.item .graph2{
+    width: 90%; 
+}
+.item .graph3{
+    width: 90%; 
+}
+.item ul{
+    padding: 20px 0; 
 
 }
-.projects-test .info h1{
-    font-size: 2rem;
-    padding-top: 3px;
+.item li{
+    text-align: left; 
+    font-size: 1.4em;
     padding-bottom: 10px;
 }
-.projects-test .info h3{
-    font-size: 1.3rem;
+.back{
+    text-align: center;
 }
-.projects-test .button{
-    display: flex; 
-    padding-top: 8px; 
-    width: fit-content; 
-    margin-top: 10px; 
-    padding-bottom: 10px;
+.back a{
+    transition: 1s ease margin-right;
 }
-.projects-test #pingpong img{
-    justify-content: center; 
-    object-fit: contain; 
+.back h1{
+    color: black;
 }
+.back a:hover{
+    margin-right: 20px;
+}
+/*Mobile*/
+@media (max-width: 480px) {
+
+}
+/*Extra small devices */
+@media (max-width: 480px) {
+
+}
+/*small tablets */
+@media (max-width: 480px) {
+
+}
+/*large tablets/laptop*/
+@media (max-width: 480px) {
+
+}
+/*desktops*/
 @media only screen and (min-width: 1200px) {
     /*Text in line for header */ 
   #header .hamburger{
@@ -420,13 +386,8 @@ a {
  #header .navlist ul li:hover a{
      color:rgb(48, 48, 194);
  }
- 
 }
-@media only screen and (max-width: 800px) {
-    #project{ 
-        padding-top: 20px; 
-    }
-}
-@media only screen and (max-width: 1000px) {
-    
+/*extra large screens*/
+@media (max-width: 480px) {
+
 }

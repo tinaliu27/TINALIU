@@ -28,7 +28,6 @@
                             <li><a href = "index.html" data-after= "home">Home</a></li>
                             <li><a href = "projects.html" data-after="OverviewProjects">Projects</a></li>
                             <li><a href = "#" data-after="Experiences">Resume</a></li>
-                            <li><a href = "contact-me.html" data-after = "ContactMe">Contact Me</a></li>
                         </ul> 
                     </div>
                 </div>
@@ -59,30 +58,27 @@
                 <div class="resume-top">
                     <div class="elements">
                         <div class="left"> </div>
-                        <div class="header">
+                        <div class="right">
                             <h1>Tianai (Tina) Liu</h1>
-                            <h2>Software Developer</h2>
+                            <p>Aspiring Project Manager + UX/UI Researcher</p>
+                            <div class="links">
+                                <a href = "mailto:27tinaliu@gmail.com?">
+                                        <img src="Images/mail_FILL0_wght400_GRAD0_opsz48.png" class="mail">
+                                </a>
+                                <a href="https://www.linkedin.com/in/tinaliu27/">
+                                    <img src="Images/linkedln.png">
+
+                                </a>
+                                <a href = "https://github.com/tinaliu27" class="github">
+                                    <img src="Images/github.png">
+                                </a>
+                            </div>
                         </div>
-                        <div class="links">
-                            <a href = "mailto:27tinaliu@gmail.com?">
-                                    <img src="Images/mail_FILL0_wght400_GRAD0_opsz48.png" class="mail">
-                                    <h1>27tinaliu@gmail.com</h1>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tinaliu27/">
-                                <img src="Images/linkedln.png">
-                                <h1>linkedin.com/in/tinaliu27/</h1>
-                             </a>
-                            <a href = "https://github.com/tinaliu27" class="github">
-                                <img src="Images/github.png">
-                                <h1>github.com/tinaliu27</h1>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="resume-bottom">
                     <div class="top">
                         <h1>About Me</h1><div class="border"></div>
-                        <h2>Experience with leading teams for software and curriculum development. Can effectively lead others while also being an active team member. I am an active problem-solver, communicator, and innovator in and out of the classroom. Eager to make a difference in the world via technology and design!</h2>
+                        <p>Experience with leading teams for software and curriculum development. Can effectively lead others while also being an active team member. I am an active problem-solver, communicator, and innovator in and out of the classroom. Eager to make a difference in the world via technology and design!</p>
                     </div>
                     <div class="left">
                         <div class="items">
@@ -91,6 +87,8 @@
                                 <button onclick="showContent(2)">Work</button>
                                 <button onclick="showContent(3)">Volunteer</button>
                                 <button onclick="showContent(4)">Awards</button>
+                                <button onclick="showContent(5)">Skills&Interests</button>
+
                             </div>
                             <div class="line"></div>
                             <div class="content" id="content1">
@@ -102,16 +100,20 @@
                                         <div class="info">
                                             <ul>
                                                 <li>Coursework: Data Structures, Intro to Data Analytics, Introduction to Discrete Structures, Matrix Algebra,
-                                                    Machine Architecture, Information Technology Management, Human Computer Intercation (in progress), Software Engineering (in progress), Introduction to Databases (in progress) </li>
-                                                <li>Clubs and Activites: Vice President of UBCO Tennis Club, Interim Events Coordinator of QSCU, Social Media Coordinator of The Phoenix News, Member of Computer Science Course Union, Member of GirlsInTech, Orientation Leader, Homecoming Ambassador</li>
+                                                    Machine Architecture, Information Technology Management, Human Computer Intercation, Software Engineering (in progress), Introduction to Databases, International Business </li>
+                                                <li>Clubs and Activities: Vice President of UBCO Tennis Club, Events Coordinator of QSCU, Social Media Coordinator of The Phoenix News, Member of Computer Science Course Union, Orientation Leader, Homecoming Ambassador, Undergraduate Teaching Assistant</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <h1>The National University of Singapore - Exchange Program</h1>
+                                        <h1>The National University of Singapore</h1>
                                         <h2>2024</h2>
-                                        <h3>*Starting in January 2024*</h3>
-                                        <h3>NUS UBC Exchange Award</h3>
+                                        <h3>Computer Science</h3>
+                                        <div class="info">
+                                            <ul>
+                                        <li>Participating in Go Global exchange program at NUS for 2nd semester of 3rd year through the NUS UBC Exchange Award. </li>
+                                        </ul>
+                                    </div>
                                     </div>
                                     <div class="item">
                                         <h1>Millburn High School</h1>
@@ -133,34 +135,30 @@
                                             <h3>Remote</h3>
                                             <h4>Perceptify is an early-stage startup in the business sector that revoluntisizes the way that companies understand their presence on the internet to not only improve the connections between companies but also the public. As a Backend Engineer, I develop software tools to determine relevance and sentiment analysis via web scraping and public/private APIs.  </h4>
                                             <ul>
-                                                <li>Developing data scraping functions to extract data on Instagram with APIs (instascrape) to provide sentiment analysis on
-                                                    hashtag, story, and comment mentions for different companies for early-stage start-up in the business sector</li>
-                                                <li>Debugging and improving existing Python code by scraping irrelevant data to provide consistent sentiment analysis for
-                                                    popular social media Afrom the last 5 days improving accuracy and efficiency while also writing a significant portion of code
-                                                    for company’s backend team.</li>
-                                                <li>Working with Supabase to store sentiment analysis, connecting front end and back-end functionalities</li>
-                                                </li>
+                                                <li>Developed data scraping functionalities utilizing Instagram APIS (instascrape) that return company's relevancy and sentiment on Instagram by analyzing company's most recent posts, stories, and comments.</li>
+                                                <li>Implemented sentiment analysis through public Instagram APIs (instascrape) for companies to evaluate best times to post, popularity, and trendiness.</li>
+                                                <li>Debugged and improved existing backend architecture by removing irrelevant and outdated code while also imprroving its' accuracy/efficiency by scraping data from the last 5 days into Supabase to connect front-end and back-end functionalities.</li>
+                                                <li>Attended weekly meetings on Zoom to discuss weekly updates and goals while also suggesting different backend implementations to optimize the integration of components for front-end team. </li>
                                             </ul>
                                             <h5>Technologies used: </h5>
                                             <div class="tech">
                                                 <div class="elements">Python</div>
                                                 <div class="elements">Supabase</div>
                                                 <div class="elements">SQL</div>
-                                                <div class="elements">Git</div>
-                                                <div class="elements">Public APIs</div>
+                                                <div class="elements">Instascrape</div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <h1>Lead Curriculum Developer @ <span>AiTudier</span></h1>
                                             <h2>June 2022 - September 2022</h2>
                                             <h3>Remote</h3>
-                                            <h4>AiTudier is a pre-seed startup that redefines how schools approach computer science by creating a hands-on-software for a EECS curriculum for students who want to learn computer science. As the Lead Curriculum Developer, I oversaw the curriculum content and created several units on EESC with a focus in C++ and Arduino Boards.</h4>
+                                            <h4>AiTudier is a pre-seed startup that redefines how schools approach computer science by creating a hands-on-software on EECS for students wanting to learn computer science. At first I was hired as a Curriculum Developer, but was quickly promoted to Lead Curriculum Developer. </h4>
                                             <ul>
                                                 <li>Led a team of 15+ interns to complete a 42-unit curriculum on EESC, Internet of Things, and C++ by conducting daily
                                                     checkups on Slack, planning weekly google meets, and discussing individual goals</li>
                                                 <li>Designed and improved 20+ units on Arduino Boards and C++ programming basics by creating engaging questions,
-                                                    activities, and quizzes to accommodate different learning styles.</li>
-                                                <li>Managed and developed entire curriculum developer internship program by working with co-founders and
+                                                    interactive activities, and quizzes to accommodate different learning styles and keep students engaged.</li>
+                                                <li>Managed and oversaw the curriculum development internship program by setting deadlines with co-founders and
                                                     frontend/backend team leads, interviewing potential candidates, and creating an innovative and unique curriculum from
                                                     scratch.</li>
                                             </ul>
@@ -168,59 +166,56 @@
                                             <div class="tech">
                                                 <div class="elements">C++</div>
                                                 <div class="elements">Arduino Boards</div>
+                                                <div class="elements">Asana</div>
                                             </div>
                                         </div>
                                         <div class="item">
                                             <h1>Social Media Coordinator @ <span>The Phoenix News</span></h1>
-                                            <h2>2022 - Current</h2>
+                                            <h2>2022 - 2023</h2>
                                             <h3>Kelowna, BC</h3>
                                             <ul>
-                                                <li>Manage and schedule social media content for the Phoenix News Instagram and Tiktok account by posting new articles,
-                                                    interviews, and updates that increased followers by 15% and engagement by 61%</li>
-                                                <li>Design posts and stories to match color schemes, engage with followers, and recommend topics for writers that are relevant
-                                                    to students and trends.</li>
+                                                <li>Increased followers by 20% and engagement by 61% by managing and creating engaging social media content for the Phoenix News Instagram, Tiktok, Linkedin, and X accounts.</li>
+                                                <li>Designed content that aligns with color schemes and engages with followers to promote new articles, urgent news, interviews, print issues, and trendy videos for 12,000 UBCO students.</li>
+                                                <li>Expanded social media presence by 20% by posting videos on Tiktok, articles on LinkedIn and X, and a newsletter to combat Bill C-18 News bans in Canada.</li>
+                                                <li>Attended weekly meetings to recommend topics for writers that are relevant to students and trends as well as provide feedback on how to market specific articles or interviews.</li>
                                             </ul>
                                             <h5>Technologies used: </h5>
                                             <div class="tech">
                                                 <div class="elements">Instagram</div>
+                                                <div class="elements">TikTok</div>
+                                                <div class="elements">LinkedIn</div>
+                                                <div class="elements">X</div>
+                                                <div class="elements">IMovie</div>
                                                 <div class="elements">Canva</div>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <h1>CS Teaching Assistant @<span> UBC</span></h1>
+                                            <h1>Undergraduate Teaching Assistant @<span> UBC</span></h1>
                                             <h2>August 2023 - Current</h2>
                                             <h3>Kelowna,BC</h3>
                                             <ul>
-                                                <li>Allocate 8+ hours a week preparing and answering questions in labs for COSC122 Computer Fluency</li>
-                                            </ul>
-                                        </div>
-                                        <div class="item">
-                                            <h1>Recruiting Coordinator @ <span>Birdseye Publication</span></h1>
-                                            <h2>May 2023 - August 2023</h2>
-                                            <h3>Remote</h3>
-                                            <ul>
-                                                <li>Identify and recruit new candidates for Birdseye Publication, a student run publication that publishes informative articles
-                                                    on entrepreneurs, through online job boards, professional networks, and referrals.</li>
-                                                <li>Review and evaluate resumes to assess qualifications and suitability for several positions with President.</li>
+                                                <li>Supervised lab sessions and tests for more than 100+ students in Computer Fluency by offering guidance on lab activities and GitHub fundamentals.</li>
+                                                <li>Retaught lecture content to answer any remaning questions or clarify aspects in labs.</li>
+                                                <li>Offered personalized feedback and thorough explanation of lab assignments with topics ranging from HTML to JavaScript while also improving student grades by at least +5%.</li>
                                             </ul>
                                         </div>
                                         <div class="item">
                                             <h1>Orientation Leader @ <span>UBC</span></h1>
-                                            <h2>August 2023 - Current</h2>
+                                            <h2>August 2023 - September 2023</h2>
                                             <h3>Kelowna, BC</h3>
                                             <ul>
-                                                <li>Greet incoming first year students by ensuring a smooth and exciting firt impression to the University of British Columbia.</li>
-                                                <li>Engage in leading new student orientation, fostering a smooth transition to campus</li>
-                                                <li>Collobrate with other orientation leaders while also providing support for orientation events (JumpStart, Create) </li>
+                                                <li>Greeted incoming UBCo students to ensure a smooth and exciting first impression of the University of British Columbia.</li>
+                                                <li>Led orientation for 30+ students to include ice breaker activities, an informative tour of campus, and information on different ways to get involved on campus.</li>
                                             </ul>
                                         </div>
                                         <div class="item">
-                                            <h1>Homecoming Ambassador @ <span>UBC</span></h1>
-                                            <h2>September 2023 - November 2023</h2>
-                                            <h3>Kelowna, BC</h3>
+                                            <h1>Recruiting Coordinator @ <span>Birdseye Publication</span></h1>
+                                            <h2>May 2023 - July 2023</h2>
+                                            <h3>Remote</h3>
                                             <ul>
-                                                <li>Promoted UBCO Homecoming to undergraduate students on social media to bridge the gaps between alumni and current UBCO students</li>
-                                                <li>Selected as a student ambassador for UBCO Homecoming</li>
+                                                <li>Recruited new candidates for Birdseye Publication - student run publication that publishes informative articles
+                                                    on entrepreneurs - through LinkedIn and Indeed, personal networks, and referrals.</li>
+                                                <li>Reviewed and evaluated resumes to assess qualifications and suitability for several positions with President.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -229,21 +224,21 @@
                             <div class="content" id="content3">
                                 <div class="box">
                                     <div class="item">
-                                        <h1>Vice President of UBCO Tennis Club</h1>
-                                        <h2>2022 - Current</h2>
+                                        <h1>Events Coordinator of QSCU</h1>
+                                        <h2>June 2023 - December 2023</h2>
                                         <h3>Kelowna, BC</h3>
                                         <ul>
-                                            <li>Assist in planning tournaments, Meet & Greets, and weekly hitting sessions to <span>100+ members</span></li>
-                                            <li>Promoted from Girls Coordinator to Treasurer to Vice President within a year</li>
+                                            <li>Planned events including an 'Intro to LinkedIn' workshop, meet and greets, and studying sessions by booking rooms, planning activities, and collaborating with other course unions/clubs for the Quantitative Sciences Course Union.</li>
+                                            <li>Worked closely with President and Vice President to ensure that events ran smoothly/efficiently and suggest different ways to increase </li>
                                         </ul>
                                     </div>
                                     <div class="item">
-                                        <h1>Interim Events Coordinator of QSCU</h1>
-                                        <h2>June 2023 - Current</h2>
+                                        <h1>Vice President + Girls Recreation Coordinator of UBCO Tennis Club</h1>
+                                        <h2>2022 - 2023</h2>
                                         <h3>Kelowna, BC</h3>
                                         <ul>
-                                            <li>Assist in the planning of major and minor events to ensure events run smoothly for Quantitative Sciences Course Union.</li>
-                                            <li>Reach out to professors, companies, students, and others.</li>
+                                            <li>Assisted in planning tournaments, Meet & Greets, and weekly hitting sessions for <span>100+ members</span></li>
+                                            <li>Promoted from Girls Coordinator to Treasurer to Vice President within a year</li>
                                         </ul>
                                     </div>
                                     <div class="item">
@@ -251,7 +246,16 @@
                                         <h2>2023</h2>
                                         <h3>Remote</h3>
                                         <ul>
-                                            <li>Volunteered to tutor beginner and intermediate python to students that want to get into technology</li>
+                                            <li>Volunteered to tutor beginner and intermediate python for young students that want to get into cs.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Homecoming Ambassador @ <span>UBC</span></h1>
+                                        <h2>September 2023 - November 2023</h2>
+                                        <h3>Kelowna, BC</h3>
+                                        <ul>
+                                            <li>Promoted UBCO Homecoming to undergraduate students on social media to bridge the gaps between alumni and current UBCO students</li>
+                                            <li>Selected as a student ambassador for UBCO Homecoming</li>
                                         </ul>
                                     </div>
                                     <div class="item">
@@ -278,6 +282,10 @@
                             <div class="content" id="content4">
                                 <div class="box">
                                     <div class="item">
+                                        <h1>1st place in MSAxRBC Case Competition</h1>
+                                        <h3>My team and I placed 1st in a case competition that focuses on providing a sustainable solution for RBC. </h3>
+                                    </div>
+                                    <div class="item">
                                         <h1>Deputy Vice Chancellor Scholarship</h1>
                                         <h3>Deputy Vice-Chancellor scholarships (DVC) are awarded to continuing domestic undergraduate students entering second, third, or fourth year at UBC’s Okanagan campus. Scholarships are based on academic achievement in the previous year.</h3>
                                     </div>
@@ -299,19 +307,52 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="content" id="content5">
+                                <div class="box">
+                                    <div class = "item">
+                                        <h1>Tech languages:</h1>
+                                        <h3></h3>
+                                        <ul>
+                                            <li>Frontend: HTML, JavaScript, Node.js, Bootstrap</li>
+                                            <li>Backend: Java, Python, SQL, C++, Assembly</li>
+                                            <li>Frameworks: Numpy, React</li>
+                                            <li>Markups: XML, CSS</li>
+                                        </ul>
+                                        <h1>Other Technologies</h1>
+                                        <h3></h3>
+                                        <ul>
+                                            <li>Project Management: Asana, Workflow, Microsoft Teams, Excel, and Access</li>
+                                            <li>UI/UX: Figma, Android Studio, Adobe Photoshop</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Interests</h1>
+                                        <h3></h3>
+                                        <ul>
+                                            <li>
+                                                AI
+                                            </li>
+                                            <li>UI/UX research</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--
                     <div class="right">
                         <div class="skills">
                             <h1>Skills & Tools</h1>
                             <div class="line"></div>
                             <h2>Frontend</h2>
                             <h3>HTML/CSS</h3>
-                            <!--
+                           
                             <div class="rate">
                             <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div>
                             </div>
-                        -->
+                     
                             <h3>Javascript</h3>
                             
                             <h2>Backend</h2>
@@ -340,6 +381,7 @@
                             <h2>Machine Learning, AI, Music, Education, Software Development</h2>
                         </div>
                     </div>
+                    -->
                     
                 </div>
             </div>
